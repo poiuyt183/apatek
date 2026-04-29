@@ -1,9 +1,11 @@
 import React from 'react'
+import prisma from '../../lib/prisma'
 
-const Page = () => {
+const Page = async () => {
+  const users = await prisma.user.findMany()
   return (
-    <div>
-      Hello, World!
+    <div className='flex justify-center items-center h-screen'>
+      {JSON.stringify(users)}
     </div>
   )
 }
