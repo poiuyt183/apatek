@@ -95,7 +95,7 @@ export default function ProductsPage() {
                     width: 64,
                     height: 64,
                     borderRadius: "var(--radius-md)",
-                    background: "rgba(242,99,34,0.12)",
+                    background: "rgba(238,28,39,0.12)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",

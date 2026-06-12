@@ -38,9 +38,9 @@ export default function TeamPage() {
   };
 
   const COLORS = [
-    "linear-gradient(135deg,#F26322,#D4511A)",
+    "linear-gradient(135deg,#EE1C27,#CC1821)",
     "linear-gradient(135deg,#1A1A1A,#333)",
-    "linear-gradient(135deg,#F26322,#F5874A)",
+    "linear-gradient(135deg,#EE1C27,#F24A52)",
     "linear-gradient(135deg,#222,#444)",
   ];
 
@@ -132,7 +132,7 @@ export default function TeamPage() {
                     className="team-avatar"
                     style={{
                       background: i % 2 === 0
-                        ? "linear-gradient(135deg,#F26322,#D4511A)"
+                        ? "linear-gradient(135deg,#EE1C27,#CC1821)"
                         : "linear-gradient(135deg,#1A1A1A,#333)",
                       width: 72,
                       height: 72,

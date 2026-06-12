@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Clients",
@@ -33,6 +34,16 @@ const ENT_CLIENTS = [
   { name: "VICOSTONE", desc: "Quartz Surfaces" },
 ];
 
+const LOGO_MAP: Record<string, string> = {
+  "Tổng Cục Thuế": "/partner/logo-thue-nha-nuoc-vector-inkythuatso-01.png",
+  "Cục Hàng Hải VN": "/partner/Logo_Cục_Hàng_hải_Việt_Nam-removebg-preview.png",
+  "Thanh Tra VN": "/partner/logo-thanh-tra-viet-nam.png",
+  "Viettel": "/partner/logo-viettel.png",
+  "AO Smith": "/partner/logo-ao-smith.png",
+  "HABECO": "/partner/logo-habeco.png",
+  "Casper": "/partner/logo-casper.png",
+};
+
 export default function ClientsPage() {
   const t = useTranslations("clients");
 
@@ -58,9 +69,12 @@ export default function ClientsPage() {
 
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-              gap: 16,
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: 32,
+              maxWidth: 1100,
+              margin: "0 auto",
             }}
           >
             {GOV_CLIENTS.map((c, i) => (
@@ -68,28 +82,37 @@ export default function ClientsPage() {
                 key={i}
                 id={`gov-client-${i + 1}`}
                 style={{
-                  background: i < 4 ? "var(--color-dark)" : "var(--color-white)",
-                  border: `1px solid ${i < 4 ? "var(--color-border-dark)" : "var(--color-border)"}`,
-                  borderRadius: "var(--radius-md)",
-                  padding: "24px 20px",
+                  width: 240,
+                  padding: "16px",
                   textAlign: "center",
-                  transition: "transform 0.25s, box-shadow 0.25s",
+                  transition: "transform 0.25s",
                   cursor: "default",
                 }}
-                className="card"
+                className="logo-item"
               >
-                <div
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: 16,
-                    fontWeight: 800,
-                    color: i < 4 ? "white" : "var(--color-dark)",
-                    marginBottom: 6,
-                  }}
-                >
-                  {c.name}
-                </div>
-                <div style={{ fontSize: 12, color: i < 4 ? "rgba(255,255,255,0.4)" : "var(--color-text-light)" }}>
+                {LOGO_MAP[c.name] ? (
+                  <div style={{ position: "relative", height: 100, marginBottom: 16 }}>
+                    <Image
+                      src={LOGO_MAP[c.name]}
+                      alt={c.name}
+                      fill
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                ) : (
+                  <div
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontSize: 18,
+                      fontWeight: 800,
+                      color: "var(--color-dark)",
+                      marginBottom: 8,
+                    }}
+                  >
+                    {c.name}
+                  </div>
+                )}
+                <div style={{ fontSize: 13, color: "var(--color-text-light)" }}>
                   {c.desc}
                 </div>
               </div>

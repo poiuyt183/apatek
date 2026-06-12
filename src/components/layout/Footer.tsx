@@ -1,6 +1,7 @@
 "use client"
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, Globe, MapPin, ChevronRight } from "lucide-react";
 
 const EN_LINKS = [
@@ -31,11 +32,15 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand */}
           <div>
-            <div className="footer-logo">
-              <span>APATEK</span>
-              <span style={{ color: "rgba(255,255,255,0.4)", fontWeight: 400, fontSize: "16px" }}>
-                {" "}VIETNAM
-              </span>
+            <div style={{ marginBottom: 16 }}>
+              <Image
+                src="/logo_apatek.png"
+                alt="Apatek Vietnam Logo"
+                width={140}
+                height={40}
+                style={{ objectFit: "contain", height: "auto" }}
+                priority
+              />
             </div>
             <p className="footer-slogan">"{t("slogan")}"</p>
             <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", lineHeight: 1.7 }}>

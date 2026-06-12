@@ -67,8 +67,8 @@ export default function ServicesPreview() {
                 className="product-icon"
                 style={{
                   background: p.bgDark
-                    ? "rgba(242,99,34,0.15)"
-                    : "rgba(242,99,34,0.08)",
+                    ? "rgba(238,28,39,0.15)"
+                    : "rgba(238,28,39,0.08)",
                 }}
               >
                 <p.Icon

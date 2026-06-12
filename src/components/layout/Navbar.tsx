@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -68,11 +69,15 @@ export default function Navbar() {
       <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
         <div className="container navbar-inner">
           {/* Logo */}
-          <Link href={`/${locale}`} className="navbar-logo">
-            <span>APATEK</span>
-            <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 400, fontSize: "14px" }}>
-              {" "}VIETNAM
-            </span>
+          <Link href={`/${locale}`} className="navbar-logo" style={{ display: "flex", alignItems: "center" }}>
+            <Image
+              src="/logo_apatek.png"
+              alt="Apatek Vietnam Logo"
+              width={180}
+              height={60}
+              style={{ objectFit: "contain", height: "auto" }}
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -148,7 +153,7 @@ export default function Navbar() {
           }}
           aria-label="Close menu"
         >
-          <X size={32} color="white" strokeWidth={1.5} />
+          {/* <X size={32} color="white" strokeWidth={1.5} /> */}
         </button>
 
         {navLinks.map((link) => (

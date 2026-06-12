@@ -31,7 +31,7 @@ function RadarPing({ delay = 0 }: { delay?: number }) {
         position: "absolute",
         inset: 0,
         borderRadius: "50%",
-        border: "1px solid rgba(242,99,34,0.5)",
+        border: "1px solid rgba(238,28,39,0.5)",
         animation: `radarPing 3s ease-out ${delay}s infinite`,
       }}
     />
@@ -58,7 +58,7 @@ function RadarDisplay() {
               position: "absolute",
               inset: `${100 - r}%`,
               borderRadius: "50%",
-              border: "1px solid rgba(242,99,34,0.12)",
+              border: "1px solid rgba(238,28,39,0.12)",
               left: `${(100 - r) / 2}%`,
               top: `${(100 - r) / 2}%`,
               width: `${r}%`,
@@ -68,10 +68,10 @@ function RadarDisplay() {
         ))}
         {/* Cross hairs */}
         <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ width: "100%", height: "1px", background: "rgba(242,99,34,0.1)" }} />
+          <div style={{ width: "100%", height: "1px", background: "rgba(238,28,39,0.1)" }} />
         </div>
         <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ height: "100%", width: "1px", background: "rgba(242,99,34,0.1)" }} />
+          <div style={{ height: "100%", width: "1px", background: "rgba(238,28,39,0.1)" }} />
         </div>
         {/* Sweep */}
         <div className="vts-radar-sweep" />
@@ -335,7 +335,7 @@ export default function VTSPage() {
       {/* ── TECH STACK ───────────────────────────────── */}
       <section
         className="section"
-        style={{ background: "rgba(242,99,34,0.04)", borderTop: "1px solid rgba(242,99,34,0.12)", borderBottom: "1px solid rgba(242,99,34,0.12)" }}
+        style={{ background: "rgba(238,28,39,0.04)", borderTop: "1px solid rgba(238,28,39,0.12)", borderBottom: "1px solid rgba(238,28,39,0.12)" }}
       >
         <div className="container">
           <div style={{ textAlign: "center", marginBottom: 56 }}>

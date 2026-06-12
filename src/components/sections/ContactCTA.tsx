@@ -29,7 +29,7 @@ export default function ContactCTA() {
           width: 500,
           height: 500,
           borderRadius: "50%",
-          border: "1px solid rgba(242,99,34,0.1)",
+          border: "1px solid rgba(238,28,39,0.1)",
           pointerEvents: "none",
         }}
       />
@@ -41,7 +41,7 @@ export default function ContactCTA() {
           width: 400,
           height: 400,
           borderRadius: "50%",
-          border: "1px solid rgba(242,99,34,0.07)",
+          border: "1px solid rgba(238,28,39,0.07)",
           pointerEvents: "none",
         }}
       />

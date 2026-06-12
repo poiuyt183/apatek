@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import "../globals.css";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
