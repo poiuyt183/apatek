@@ -1,18 +1,6 @@
-import { requireAuth } from '@/lib/auth-untils'
-import { caller } from '@/trpc/server'
-import React from 'react'
-import { LogoutButton } from './logout'
+import { redirect } from "next/navigation";
 
-const Page = async () => {
-  await requireAuth()
-  const users = await caller.getUsers()
-
-  return (
-    <div className='flex justify-center items-center h-screen'>
-      {JSON.stringify(users)}
-      <LogoutButton />
-    </div>
-  )
+// Root redirects to default locale
+export default function RootPage() {
+  redirect("/en");
 }
-
-export default Page
