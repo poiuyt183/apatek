@@ -10,23 +10,21 @@ import { Menu, X } from "lucide-react";
 const NAV_LINKS = [
   { key: "home", href: "/" },
   { key: "about", href: "/about" },
-  { key: "history", href: "/history" },
   { key: "vision", href: "/vision" },
   { key: "products", href: "/products-services" },
-  { key: "team", href: "/team" },
   { key: "partners", href: "/partners" },
   { key: "clients", href: "/clients" },
+  { key: "vts", href: "/vts" }
 ];
 
 const VI_NAV_LINKS = [
   { key: "home", href: "/" },
   { key: "about", href: "/gioi-thieu" },
-  { key: "history", href: "/lich-su" },
   { key: "vision", href: "/tam-nhin" },
   { key: "products", href: "/san-pham-dich-vu" },
-  { key: "team", href: "/doi-ngu" },
   { key: "partners", href: "/doi-tac" },
   { key: "clients", href: "/khach-hang" },
+  { key: "vts", href: "/vts" }
 ];
 
 export default function Navbar() {

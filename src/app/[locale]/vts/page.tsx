@@ -58,7 +58,7 @@ function RadarDisplay() {
               position: "absolute",
               inset: `${100 - r}%`,
               borderRadius: "50%",
-              border: "1px solid rgba(238,28,39,0.12)",
+              border: "1px solid rgba(238,28,39,0.15)",
               left: `${(100 - r) / 2}%`,
               top: `${(100 - r) / 2}%`,
               width: `${r}%`,
@@ -68,10 +68,10 @@ function RadarDisplay() {
         ))}
         {/* Cross hairs */}
         <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ width: "100%", height: "1px", background: "rgba(238,28,39,0.1)" }} />
+          <div style={{ width: "100%", height: "1px", background: "rgba(238,28,39,0.12)" }} />
         </div>
         <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ height: "100%", width: "1px", background: "rgba(238,28,39,0.1)" }} />
+          <div style={{ height: "100%", width: "1px", background: "rgba(238,28,39,0.12)" }} />
         </div>
         {/* Sweep */}
         <div className="vts-radar-sweep" />
@@ -162,7 +162,7 @@ export default function VTSPage() {
   ];
 
   return (
-    <div style={{ background: "var(--color-dark)", minHeight: "100vh", color: "white" }}>
+    <div className="vts-light">
 
       {/* ── HERO ─────────────────────────────────────── */}
       <section className="vts-hero" id="vts-hero">
@@ -248,18 +248,18 @@ export default function VTSPage() {
 
         {/* Scroll indicator */}
         <div className="vts-scroll-hint">
-          <ChevronDown size={20} color="rgba(255,255,255,0.35)" />
+          <ChevronDown size={20} color="var(--color-text-light)" />
         </div>
       </section>
 
       {/* ── OVERVIEW ─────────────────────────────────── */}
-      <section className="section" id="vts-overview" style={{ background: "var(--color-dark)", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+      <section className="section" id="vts-overview" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="container">
           <div className="vts-overview-grid">
             {/* Hero image */}
             <div className="vts-overview-image">
               <Image
-                src="/vts-hero.png"
+                src="/taubien.avif"
                 alt="VTS Control Room"
                 fill
                 style={{ objectFit: "cover", borderRadius: "var(--radius-lg)" }}
@@ -273,35 +273,17 @@ export default function VTSPage() {
 
             {/* Text */}
             <div>
-              <span
-                style={{
-                  fontSize: 11,
-                  fontWeight: 700,
-                  letterSpacing: "3px",
-                  color: "var(--color-primary)",
-                  display: "block",
-                  marginBottom: 16,
-                }}
-              >
+              <span className="section-label">
                 {t("section_label")}
               </span>
-              <h2
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "clamp(24px,3vw,40px)",
-                  fontWeight: 800,
-                  color: "white",
-                  lineHeight: 1.15,
-                  marginBottom: 24,
-                }}
-              >
+              <h2 className="section-title" style={{ marginBottom: 24 }}>
                 {t("overview_title")}
               </h2>
               <p
                 style={{
                   fontSize: 16,
                   lineHeight: 1.8,
-                  color: "rgba(255,255,255,0.6)",
+                  color: "var(--color-text-muted)",
                   marginBottom: 36,
                 }}
               >
@@ -316,13 +298,13 @@ export default function VTSPage() {
                     style={{
                       fontSize: 13,
                       fontWeight: 700,
-                      color: "white",
+                      color: "var(--color-dark)",
                       marginBottom: 4,
                     }}
                   >
                     Japan Radio Co. (JRC)
                   </div>
-                  <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5 }}>
+                  <div style={{ fontSize: 12, color: "var(--color-text-muted)", lineHeight: 1.5 }}>
                     Official partner for maritime VTS hardware &amp; software integration
                   </div>
                 </div>
@@ -333,27 +315,16 @@ export default function VTSPage() {
       </section>
 
       {/* ── TECH STACK ───────────────────────────────── */}
-      <section
-        className="section"
-        style={{ background: "rgba(238,28,39,0.04)", borderTop: "1px solid rgba(238,28,39,0.12)", borderBottom: "1px solid rgba(238,28,39,0.12)" }}
-      >
+      <section className="section section-light">
         <div className="container">
           <div style={{ textAlign: "center", marginBottom: 56 }}>
-            <span className="section-label" style={{ color: "var(--color-primary)" }}>
+            <span className="section-label">
               {t("section_label")}
             </span>
-            <h2
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(22px,2.5vw,36px)",
-                fontWeight: 800,
-                color: "white",
-                marginBottom: 12,
-              }}
-            >
+            <h2 className="section-title" style={{ marginBottom: 12 }}>
               {t("tech_title")}
             </h2>
-            <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)" }}>{t("tech_subtitle")}</p>
+            <p style={{ fontSize: 15, color: "var(--color-text-muted)" }}>{t("tech_subtitle")}</p>
           </div>
 
           <div className="vts-tech-grid">
@@ -385,18 +356,11 @@ export default function VTSPage() {
       </section>
 
       {/* ── CAPABILITIES ─────────────────────────────── */}
-      <section className="section" style={{ background: "var(--color-dark)" }}>
+      <section className="section">
         <div className="container">
           <div style={{ textAlign: "center", marginBottom: 56 }}>
-            <span className="section-label" style={{ color: "var(--color-primary)" }}>CAPABILITIES</span>
-            <h2
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(22px,2.5vw,36px)",
-                fontWeight: 800,
-                color: "white",
-              }}
-            >
+            <span className="section-label">CAPABILITIES</span>
+            <h2 className="section-title">
               {t("capabilities_title")}
             </h2>
           </div>
@@ -417,37 +381,22 @@ export default function VTSPage() {
       </section>
 
       {/* ── CLIENTS DEPLOYED ─────────────────────────── */}
-      <section
-        className="section"
-        style={{
-          background: "linear-gradient(135deg, #0F1420 0%, #1A0F08 100%)",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
-        }}
-      >
+      <section className="section section-light">
         <div className="container">
           <div className="vts-clients-grid">
             <div>
-              <span className="section-label" style={{ color: "var(--color-primary)" }}>REFERENCES</span>
-              <h2
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "clamp(22px,2.5vw,36px)",
-                  fontWeight: 800,
-                  color: "white",
-                  marginBottom: 20,
-                  marginTop: 8,
-                }}
-              >
+              <span className="section-label">REFERENCES</span>
+              <h2 className="section-title" style={{ marginBottom: 20, marginTop: 8 }}>
                 {t("clients_title")}
               </h2>
-              <p style={{ fontSize: 15, lineHeight: 1.75, color: "rgba(255,255,255,0.55)", marginBottom: 36 }}>
+              <p style={{ fontSize: 15, lineHeight: 1.75, color: "var(--color-text-muted)", marginBottom: 36 }}>
                 {t("clients_body")}
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {CLIENTS.map((c, i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: 12 }}>
                     <CheckCircle2 size={18} color="var(--color-primary)" strokeWidth={2} />
-                    <span style={{ fontSize: 15, color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>{c}</span>
+                    <span style={{ fontSize: 15, color: "var(--color-text)", fontWeight: 500 }}>{c}</span>
                   </div>
                 ))}
               </div>
@@ -470,22 +419,19 @@ export default function VTSPage() {
       <section
         id="vts-form"
         className="section"
-        style={{
-          background: "var(--color-dark)",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
-        }}
+        style={{ borderTop: "1px solid var(--color-border)" }}
       >
         <div className="container">
           <div className="vts-form-grid">
             {/* CTA text */}
             <div>
-              <span className="section-label" style={{ color: "var(--color-primary)" }}>GET STARTED</span>
+              <span className="section-label">GET STARTED</span>
               <h2
                 style={{
                   fontFamily: "var(--font-display)",
                   fontSize: "clamp(24px,3vw,44px)",
                   fontWeight: 800,
-                  color: "white",
+                  color: "var(--color-dark)",
                   lineHeight: 1.15,
                   marginBottom: 20,
                   marginTop: 8,
@@ -493,7 +439,7 @@ export default function VTSPage() {
               >
                 {t("cta_title")}
               </h2>
-              <p style={{ fontSize: 16, color: "rgba(255,255,255,0.55)", lineHeight: 1.75, marginBottom: 36 }}>
+              <p style={{ fontSize: 16, color: "var(--color-text-muted)", lineHeight: 1.75, marginBottom: 36 }}>
                 {t("cta_body")}
               </p>
               <a
@@ -524,13 +470,13 @@ export default function VTSPage() {
                       fontFamily: "var(--font-display)",
                       fontSize: 22,
                       fontWeight: 700,
-                      color: "white",
+                      color: "var(--color-dark)",
                       marginBottom: 8,
                     }}
                   >
                     {t("form_success")}
                   </h3>
-                  <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 14 }}>
+                  <p style={{ color: "var(--color-text-muted)", fontSize: 14 }}>
                     We'll get back to you within 24 business hours.
                   </p>
                 </div>
@@ -541,7 +487,7 @@ export default function VTSPage() {
                       fontFamily: "var(--font-display)",
                       fontSize: 20,
                       fontWeight: 700,
-                      color: "white",
+                      color: "var(--color-dark)",
                       marginBottom: 24,
                     }}
                   >

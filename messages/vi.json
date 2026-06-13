@@ -8,7 +8,8 @@
     "team": "Đội Ngũ",
     "partners": "Đối Tác",
     "clients": "Khách Hàng",
-    "contact": "Liên Hệ"
+    "contact": "Liên Hệ",
+    "vts": "VTS"
   },
   "hero": {
     "badge": "Công Ty Công Nghệ Tiên Phong",
@@ -99,18 +100,66 @@
     "staff_title": "Chuyên Viên Kỹ Thuật",
     "years_exp": "năm KN",
     "members": {
-      "quan": { "name": "Nguyễn Hồng Quân", "role": "Giám Đốc", "exp": "16 năm" },
-      "dung": { "name": "Vũ Thị Dung", "role": "Giám Đốc Kinh Doanh", "exp": "16 năm" },
-      "hoa": { "name": "Trần Văn Hoà", "role": "TVP Miền Nam", "exp": "11 năm" },
-      "cu": { "name": "Phan Hữu Cử", "role": "Giám Đốc Công Nghệ", "exp": "15 năm" },
-      "lam": { "name": "Nguyễn Thanh Lâm", "role": "Thạc Sĩ CNTT – Chuyên Gia Công Nghệ", "exp": "" },
-      "anh": { "name": "Bùi Văn Anh", "role": "Kế Toán – Cử Nhân Tài Chính", "exp": "" },
-      "tuan": { "name": "Mai Văn Tuân", "role": "Kỹ Sư CNTT – Chuyên Gia Công Nghệ", "exp": "" },
-      "binh": { "name": "Nguyễn Thanh Bình", "role": "Cử Nhân CNTT – Chuyên Gia Công Nghệ", "exp": "" },
-      "thuc": { "name": "Phan Bá Thức", "role": "Cử Nhân CNTT – Chuyên Gia VTS", "exp": "" },
-      "ha": { "name": "Trần Thu Hà", "role": "Chuyên Gia Dữ Liệu (BA)", "exp": "" },
-      "phi": { "name": "Lê Văn Phi", "role": "Kỹ Sư Cơ Điện – Kinh Doanh", "exp": "" },
-      "phuoc": { "name": "Nguyễn Hữu Phước", "role": "Kỹ Sư CNTT – Kinh Doanh", "exp": "" }
+      "quan": {
+        "name": "Nguyễn Hồng Quân",
+        "role": "Giám Đốc",
+        "exp": "16 năm"
+      },
+      "dung": {
+        "name": "Vũ Thị Dung",
+        "role": "Giám Đốc Kinh Doanh",
+        "exp": "16 năm"
+      },
+      "hoa": {
+        "name": "Trần Văn Hoà",
+        "role": "TVP Miền Nam",
+        "exp": "11 năm"
+      },
+      "cu": {
+        "name": "Phan Hữu Cử",
+        "role": "Giám Đốc Công Nghệ",
+        "exp": "15 năm"
+      },
+      "lam": {
+        "name": "Nguyễn Thanh Lâm",
+        "role": "Thạc Sĩ CNTT – Chuyên Gia Công Nghệ",
+        "exp": ""
+      },
+      "anh": {
+        "name": "Bùi Văn Anh",
+        "role": "Kế Toán – Cử Nhân Tài Chính",
+        "exp": ""
+      },
+      "tuan": {
+        "name": "Mai Văn Tuân",
+        "role": "Kỹ Sư CNTT – Chuyên Gia Công Nghệ",
+        "exp": ""
+      },
+      "binh": {
+        "name": "Nguyễn Thanh Bình",
+        "role": "Cử Nhân CNTT – Chuyên Gia Công Nghệ",
+        "exp": ""
+      },
+      "thuc": {
+        "name": "Phan Bá Thức",
+        "role": "Cử Nhân CNTT – Chuyên Gia VTS",
+        "exp": ""
+      },
+      "ha": {
+        "name": "Trần Thu Hà",
+        "role": "Chuyên Gia Dữ Liệu (BA)",
+        "exp": ""
+      },
+      "phi": {
+        "name": "Lê Văn Phi",
+        "role": "Kỹ Sư Cơ Điện – Kinh Doanh",
+        "exp": ""
+      },
+      "phuoc": {
+        "name": "Nguyễn Hữu Phước",
+        "role": "Kỹ Sư CNTT – Kinh Doanh",
+        "exp": ""
+      }
     }
   },
   "partners": {

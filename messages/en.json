@@ -8,7 +8,8 @@
     "team": "Our Team",
     "partners": "Partners",
     "clients": "Clients",
-    "contact": "Contact"
+    "contact": "Contact",
+    "vts": "VTS"
   },
   "hero": {
     "badge": "Pioneer Technology Company",
@@ -99,18 +100,66 @@
     "staff_title": "Technical Specialists",
     "years_exp": "yrs exp",
     "members": {
-      "quan": { "name": "Nguyen Hong Quan", "role": "Director", "exp": "16 years" },
-      "dung": { "name": "Vu Thi Dung", "role": "Business Director", "exp": "16 years" },
-      "hoa": { "name": "Tran Van Hoa", "role": "Southern Regional VP", "exp": "11 years" },
-      "cu": { "name": "Phan Huu Cu", "role": "Chief Technology Officer", "exp": "15 years" },
-      "lam": { "name": "Nguyen Thanh Lam", "role": "IT Master — Tech Expert", "exp": "" },
-      "anh": { "name": "Bui Van Anh", "role": "Accountant — Finance", "exp": "" },
-      "tuan": { "name": "Mai Van Tuan", "role": "IT Engineer — Tech Expert", "exp": "" },
-      "binh": { "name": "Nguyen Thanh Binh", "role": "IT Graduate — Tech Expert", "exp": "" },
-      "thuc": { "name": "Phan Ba Thuc", "role": "IT Graduate — VTS Expert", "exp": "" },
-      "ha": { "name": "Tran Thu Ha", "role": "Data Expert (BA)", "exp": "" },
-      "phi": { "name": "Le Van Phi", "role": "Electrical Engineer — Sales", "exp": "" },
-      "phuoc": { "name": "Nguyen Huu Phuoc", "role": "IT Engineer — Sales", "exp": "" }
+      "quan": {
+        "name": "Nguyen Hong Quan",
+        "role": "Director",
+        "exp": "16 years"
+      },
+      "dung": {
+        "name": "Vu Thi Dung",
+        "role": "Business Director",
+        "exp": "16 years"
+      },
+      "hoa": {
+        "name": "Tran Van Hoa",
+        "role": "Southern Regional VP",
+        "exp": "11 years"
+      },
+      "cu": {
+        "name": "Phan Huu Cu",
+        "role": "Chief Technology Officer",
+        "exp": "15 years"
+      },
+      "lam": {
+        "name": "Nguyen Thanh Lam",
+        "role": "IT Master — Tech Expert",
+        "exp": ""
+      },
+      "anh": {
+        "name": "Bui Van Anh",
+        "role": "Accountant — Finance",
+        "exp": ""
+      },
+      "tuan": {
+        "name": "Mai Van Tuan",
+        "role": "IT Engineer — Tech Expert",
+        "exp": ""
+      },
+      "binh": {
+        "name": "Nguyen Thanh Binh",
+        "role": "IT Graduate — Tech Expert",
+        "exp": ""
+      },
+      "thuc": {
+        "name": "Phan Ba Thuc",
+        "role": "IT Graduate — VTS Expert",
+        "exp": ""
+      },
+      "ha": {
+        "name": "Tran Thu Ha",
+        "role": "Data Expert (BA)",
+        "exp": ""
+      },
+      "phi": {
+        "name": "Le Van Phi",
+        "role": "Electrical Engineer — Sales",
+        "exp": ""
+      },
+      "phuoc": {
+        "name": "Nguyen Huu Phuoc",
+        "role": "IT Engineer — Sales",
+        "exp": ""
+      }
     }
   },
   "partners": {

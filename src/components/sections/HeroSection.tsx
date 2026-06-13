@@ -23,7 +23,7 @@ export default function HeroSection() {
     <section className="hero" id="hero">
       <div className="hero-bg" />
 
-      <div className="container" style={{ paddingTop: 72, paddingBottom: 80 }}>
+      <div className="container" style={{ paddingTop: 100, paddingBottom: 80 }}>
         <div
           className="hero-content"
           style={{

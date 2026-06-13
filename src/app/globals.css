@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap");
 @import "tailwindcss";
 
 /* =========================================
    APATEK DESIGN SYSTEM
-   Brand: Orange #EE1C27 | Black #1A1A1A
+   Brand: Red #EE1C27 | Black #1A1A1A
+   Fonts: Outfit (display) + Source Sans 3 (body)
    ========================================= */
 
 :root {
@@ -23,8 +24,8 @@
   --color-border-dark: #2a2a2a;
 
   /* Typography */
-  --font-display: "Montserrat", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
 
   /* Spacing (8pt grid) */
   --space-1: 4px;
@@ -1230,8 +1231,14 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   VTS PAGE STYLES
+   VTS PAGE STYLES (Light Mode)
 ═══════════════════════════════════════════ */
+
+.vts-light {
+  background: var(--color-white);
+  min-height: 100vh;
+  color: var(--color-text);
+}
 
 /* ── Hero ─────────────────────────────────── */
 .vts-hero {
@@ -1240,16 +1247,16 @@ img {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: #080C14;
+  background: var(--color-white);
 }
 
 .vts-hero-bg {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 60% at 70% 50%, rgba(238,28,39,0.07) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(238,28,39,0.04) 0%, transparent 60%),
-    linear-gradient(180deg, #080C14 0%, #0D1220 100%);
+    radial-gradient(ellipse 60% 60% at 70% 50%, rgba(238,28,39,0.04) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(238,28,39,0.03) 0%, transparent 60%),
+    linear-gradient(180deg, var(--color-white) 0%, var(--color-bg-light) 100%);
 }
 
 .vts-hero-inner {
@@ -1275,8 +1282,8 @@ img {
 
 .vts-badge {
   display: inline-block;
-  background: rgba(238,28,39,0.15);
-  border: 1px solid rgba(238,28,39,0.35);
+  background: rgba(238,28,39,0.08);
+  border: 1px solid rgba(238,28,39,0.2);
   color: var(--color-primary);
   font-size: 11px;
   font-weight: 700;
@@ -1288,7 +1295,7 @@ img {
 
 .vts-tag {
   font-size: 12px;
-  color: rgba(255,255,255,0.35);
+  color: var(--color-text-light);
   font-weight: 500;
 }
 
@@ -1298,8 +1305,8 @@ img {
   gap: 10px;
   margin-bottom: 24px;
   padding: 10px 18px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
 }
 
@@ -1307,7 +1314,7 @@ img {
   font-family: var(--font-display);
   font-size: 18px;
   font-weight: 900;
-  color: white;
+  color: var(--color-dark);
   letter-spacing: 2px;
 }
 
@@ -1315,7 +1322,7 @@ img {
   font-family: var(--font-display);
   font-size: clamp(32px, 4.5vw, 60px);
   font-weight: 900;
-  color: white;
+  color: var(--color-dark);
   line-height: 1.1;
   margin-bottom: 20px;
 }
@@ -1328,7 +1335,7 @@ img {
 .vts-subtitle {
   font-size: 16px;
   line-height: 1.75;
-  color: rgba(255,255,255,0.55);
+  color: var(--color-text-muted);
   margin-bottom: 36px;
   max-width: 480px;
 }
@@ -1345,7 +1352,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   padding-top: 32px;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid var(--color-border);
 }
 
 .vts-mini-stat-value {
@@ -1359,7 +1366,7 @@ img {
 
 .vts-mini-stat-label {
   font-size: 11px;
-  color: rgba(255,255,255,0.4);
+  color: var(--color-text-light);
   font-weight: 500;
   line-height: 1.3;
 }
@@ -1382,13 +1389,13 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 1px solid rgba(238,28,39,0.25);
+  border: 1px solid rgba(238,28,39,0.2);
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle, rgba(238,28,39,0.05) 0%, rgba(8,12,20,0.95) 70%);
+  background: radial-gradient(circle, rgba(238,28,39,0.04) 0%, var(--color-bg-light) 70%);
   box-shadow:
-    0 0 60px rgba(238,28,39,0.08),
-    inset 0 0 60px rgba(0,0,0,0.6);
+    0 0 60px rgba(238,28,39,0.06),
+    inset 0 0 40px rgba(0,0,0,0.03);
 }
 
 .vts-radar-sweep {
@@ -1399,8 +1406,8 @@ img {
     from 0deg,
     transparent 0deg,
     rgba(238,28,39,0.0) 300deg,
-    rgba(238,28,39,0.18) 340deg,
-    rgba(238,28,39,0.35) 360deg
+    rgba(238,28,39,0.12) 340deg,
+    rgba(238,28,39,0.25) 360deg
   );
   animation: radarSweep 4s linear infinite;
   transform-origin: center;
@@ -1457,8 +1464,8 @@ img {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: rgba(238,28,39,0.15);
-  border: 1px solid rgba(238,28,39,0.35);
+  background: rgba(238,28,39,0.08);
+  border: 1px solid rgba(238,28,39,0.2);
   color: var(--color-primary);
   font-size: 11px;
   font-weight: 700;
@@ -1502,13 +1509,13 @@ img {
   height: 420px;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid var(--color-border);
 }
 
 .vts-image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(8,12,20,0.85) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(26,26,26,0.7) 0%, transparent 60%);
 }
 
 .vts-image-badge {
@@ -1518,9 +1525,9 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(8,12,20,0.85);
+  background: rgba(26,26,26,0.85);
   border: 1px solid rgba(238,28,39,0.25);
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.85);
   font-size: 12px;
   font-weight: 600;
   padding: 8px 16px;
@@ -1533,8 +1540,8 @@ img {
   align-items: center;
   gap: 16px;
   padding: 18px 20px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
   border-left: 3px solid var(--color-primary);
   border-radius: var(--radius-md);
 }
@@ -1557,24 +1564,24 @@ img {
 }
 
 .vts-tech-card {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.07);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 24px 16px;
   text-align: center;
-  transition: border-color 0.25s, background 0.25s;
+  transition: border-color 0.25s, box-shadow 0.25s;
 }
 
 .vts-tech-card:hover {
   border-color: rgba(238,28,39,0.35);
-  background: rgba(238,28,39,0.05);
+  box-shadow: 0 4px 20px rgba(238,28,39,0.08);
 }
 
 .vts-tech-icon {
   width: 56px;
   height: 56px;
   border-radius: var(--radius-md);
-  background: rgba(238,28,39,0.1);
+  background: rgba(238,28,39,0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1585,13 +1592,13 @@ img {
   font-family: var(--font-display);
   font-size: 15px;
   font-weight: 700;
-  color: white;
+  color: var(--color-dark);
   margin-bottom: 8px;
 }
 
 .vts-tech-desc {
   font-size: 12px;
-  color: rgba(255,255,255,0.45);
+  color: var(--color-text-muted);
   line-height: 1.5;
 }
 
@@ -1602,20 +1609,20 @@ img {
   justify-content: center;
   gap: 12px;
   padding: 20px;
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   flex-wrap: wrap;
 }
 
 .flow-source {
   padding: 6px 16px;
-  background: rgba(238,28,39,0.1);
-  border: 1px solid rgba(238,28,39,0.2);
+  background: rgba(238,28,39,0.08);
+  border: 1px solid rgba(238,28,39,0.15);
   border-radius: var(--radius-full);
   font-size: 12px;
   font-weight: 700;
-  color: rgba(238,28,39,0.9);
+  color: var(--color-primary);
   letter-spacing: 1px;
 }
 
@@ -1653,17 +1660,18 @@ img {
 
 .vts-cap-card {
   position: relative;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 32px 28px;
-  transition: border-color 0.25s, transform 0.25s;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
   overflow: hidden;
 }
 
 .vts-cap-card:hover {
   border-color: rgba(238,28,39,0.3);
   transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
 }
 
 .vts-cap-num {
@@ -1674,7 +1682,7 @@ img {
   font-size: 72px;
   font-weight: 900;
   color: var(--color-primary);
-  opacity: 0.05;
+  opacity: 0.06;
   line-height: 1;
   user-select: none;
 }
@@ -1683,7 +1691,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-md);
-  background: rgba(238,28,39,0.1);
+  background: rgba(238,28,39,0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1694,14 +1702,14 @@ img {
   font-family: var(--font-display);
   font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: var(--color-dark);
   margin-bottom: 10px;
 }
 
 .vts-cap-body {
   font-size: 14px;
   line-height: 1.65;
-  color: rgba(255,255,255,0.5);
+  color: var(--color-text-muted);
 }
 
 /* ── Clients / Stats ─────────────────────── */
@@ -1719,8 +1727,8 @@ img {
 }
 
 .vts-stat-box {
-  background: rgba(238,28,39,0.07);
-  border: 1px solid rgba(238,28,39,0.2);
+  background: rgba(238,28,39,0.04);
+  border: 1px solid rgba(238,28,39,0.12);
   border-radius: var(--radius-md);
   padding: 28px 20px;
   text-align: center;
@@ -1737,7 +1745,7 @@ img {
 
 .vts-stat-key {
   font-size: 12px;
-  color: rgba(255,255,255,0.45);
+  color: var(--color-text-muted);
   font-weight: 600;
   letter-spacing: 0.5px;
   line-height: 1.4;
@@ -1752,8 +1760,8 @@ img {
 }
 
 .vts-demo-form {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 40px;
 }
@@ -1808,4 +1816,58 @@ img {
   .vts-demo-form {
     padding: 24px;
   }
+}
+
+/* ── VTS Light Mode: Global Overrides ────── */
+/* Navbar on light VTS page (uses :has selector) */
+body:has(.vts-light) .navbar:not(.scrolled) .navbar-link {
+  color: var(--color-text-muted);
+}
+
+body:has(.vts-light) .navbar:not(.scrolled) .navbar-link:hover {
+  color: var(--color-dark);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+body:has(.vts-light) .navbar:not(.scrolled) .lang-switcher {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+body:has(.vts-light) .navbar:not(.scrolled) .lang-btn {
+  color: var(--color-text-muted);
+}
+
+body:has(.vts-light) .navbar:not(.scrolled) .lang-btn:hover {
+  color: var(--color-dark);
+}
+
+/* VTS outline button */
+.vts-light .btn-outline {
+  color: var(--color-dark);
+  border-color: var(--color-border);
+}
+
+.vts-light .btn-outline:hover {
+  border-color: var(--color-dark);
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* VTS form overrides */
+.vts-light .form-label {
+  color: var(--color-text-muted);
+}
+
+.vts-light .form-input {
+  background-color: var(--color-white);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.vts-light .form-input::placeholder {
+  color: var(--color-text-light);
+}
+
+.vts-light .form-input:focus {
+  border-color: var(--color-primary);
+  background-color: var(--color-white);
 }

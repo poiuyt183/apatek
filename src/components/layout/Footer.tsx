@@ -6,10 +6,8 @@ import { Phone, Mail, Globe, MapPin, ChevronRight } from "lucide-react";
 
 const EN_LINKS = [
   { key: "about", href: "/en/about" },
-  { key: "history", href: "/en/history" },
   { key: "vision", href: "/en/vision" },
   { key: "products", href: "/en/products-services" },
-  { key: "team", href: "/en/team" },
   { key: "partners", href: "/en/partners" },
   { key: "clients", href: "/en/clients" },
   { key: "contact", href: "/en/contact" },
