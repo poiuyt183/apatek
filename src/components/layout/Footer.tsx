@@ -19,6 +19,8 @@ const SOCIAL_ICONS = [
   { Icon: Globe, href: "https://www.apatek.com.vn", label: "Website" },
 ];
 
+const ICON_COLOR = "rgba(255,255,255,0.35)";
+
 export default function Footer() {
   const t = useTranslations("footer");
   const tn = useTranslations("nav");
@@ -34,17 +36,17 @@ export default function Footer() {
               <Image
                 src="/logo_apatek.png"
                 alt="Apatek Vietnam Logo"
-                width={140}
-                height={40}
+                width={130}
+                height={38}
                 style={{ objectFit: "contain", height: "auto" }}
                 priority
               />
             </div>
             <p className="footer-slogan">"{t("slogan")}"</p>
-            <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", lineHeight: 1.7 }}>
+            <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.35)", lineHeight: 1.7 }}>
               {t("address_short")}
             </p>
-            <div style={{ marginTop: 24, display: "flex", gap: 12 }}>
+            <div style={{ marginTop: 24, display: "flex", gap: 10 }}>
               {SOCIAL_ICONS.map(({ Icon, href, label }) => (
                 <a
                   key={label}
@@ -53,28 +55,27 @@ export default function Footer() {
                   rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                   aria-label={label}
                   style={{
-                    width: 40,
-                    height: 40,
-                    borderRadius: "50%",
-                    border: "1px solid rgba(255,255,255,0.12)",
+                    width: 36,
+                    height: 36,
+                    border: "1px solid rgba(255,255,255,0.1)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     cursor: "pointer",
-                    transition: "border-color 0.25s, background 0.25s",
-                    color: "rgba(255,255,255,0.55)",
+                    transition: "border-color 0.2s, color 0.2s",
+                    color: "rgba(255,255,255,0.4)",
                     textDecoration: "none",
                   }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "var(--color-primary)";
-                    (e.currentTarget as HTMLElement).style.color = "var(--color-primary)";
+                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.5)";
+                    (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.9)";
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)";
-                    (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.55)";
+                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.1)";
+                    (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.4)";
                   }}
                 >
-                  <Icon size={16} strokeWidth={1.5} />
+                  <Icon size={15} strokeWidth={1.5} />
                 </a>
               ))}
             </div>
@@ -87,7 +88,7 @@ export default function Footer() {
               {EN_LINKS.map((link) => (
                 <li key={link.key}>
                   <Link href={link.href} className="footer-link" style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                    <ChevronRight size={12} strokeWidth={2.5} style={{ color: "var(--color-primary)", flexShrink: 0 }} />
+                    <ChevronRight size={11} strokeWidth={2} style={{ color: ICON_COLOR, flexShrink: 0 }} />
                     {tn(link.key)}
                   </Link>
                 </li>
@@ -100,23 +101,23 @@ export default function Footer() {
             <div className="footer-heading">{t("contact_info")}</div>
             <ul className="footer-links" style={{ gap: 14 }}>
               <li style={{ display: "flex", gap: 10, color: "rgba(255,255,255,0.55)", fontSize: "14px", alignItems: "flex-start" }}>
-                <Phone size={15} strokeWidth={1.5} style={{ flexShrink: 0, marginTop: 2, color: "var(--color-primary)" }} />
+                <Phone size={14} strokeWidth={1.5} style={{ flexShrink: 0, marginTop: 3, color: ICON_COLOR }} />
                 <span>{tc("phone_value")}</span>
               </li>
               <li style={{ display: "flex", gap: 10, color: "rgba(255,255,255,0.55)", fontSize: "14px", alignItems: "flex-start" }}>
-                <Mail size={15} strokeWidth={1.5} style={{ flexShrink: 0, marginTop: 2, color: "var(--color-primary)" }} />
+                <Mail size={14} strokeWidth={1.5} style={{ flexShrink: 0, marginTop: 3, color: ICON_COLOR }} />
                 <a href={`mailto:${tc("email_value")}`} className="footer-link">
                   {tc("email_value")}
                 </a>
               </li>
               <li style={{ display: "flex", gap: 10, color: "rgba(255,255,255,0.55)", fontSize: "14px", alignItems: "flex-start" }}>
-                <Globe size={15} strokeWidth={1.5} style={{ flexShrink: 0, marginTop: 2, color: "var(--color-primary)" }} />
+                <Globe size={14} strokeWidth={1.5} style={{ flexShrink: 0, marginTop: 3, color: ICON_COLOR }} />
                 <a href="https://www.apatek.com.vn" target="_blank" rel="noopener noreferrer" className="footer-link">
                   www.apatek.com.vn
                 </a>
               </li>
               <li style={{ display: "flex", gap: 10, color: "rgba(255,255,255,0.55)", fontSize: "14px", alignItems: "flex-start" }}>
-                <MapPin size={15} strokeWidth={1.5} style={{ flexShrink: 0, marginTop: 2, color: "var(--color-primary)" }} />
+                <MapPin size={14} strokeWidth={1.5} style={{ flexShrink: 0, marginTop: 3, color: ICON_COLOR }} />
                 <span style={{ lineHeight: 1.5 }}>{t("address_short")}</span>
               </li>
             </ul>
