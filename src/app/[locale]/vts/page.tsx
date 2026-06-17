@@ -1,10 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import {
   Radio,
   Radar,
@@ -117,9 +115,6 @@ function RadarDisplay() {
 // ─── Main Page ──────────────────────────────────────────────────────────────
 export default function VTSPage() {
   const t = useTranslations("vts");
-  const pathname = usePathname();
-  const locale = pathname.startsWith("/vi") ? "vi" : "en";
-  const contactHref = `/${locale}${locale === "vi" ? "/lien-he" : "/contact"}`;
 
   const [mounted, setMounted] = useState(false);
   const [formData, setFormData] = useState({ port: "", name: "", email: "", message: "" });
@@ -165,143 +160,110 @@ export default function VTSPage() {
     <div className="vts-light">
 
       {/* ── HERO ─────────────────────────────────────── */}
-      <section className="vts-hero" id="vts-hero">
-        <div className="vts-hero-bg" />
-
-        <div className="container vts-hero-inner">
-          {/* Left content */}
-          <div
-            className="vts-hero-content"
-            style={{
-              opacity: mounted ? 1 : 0,
-              transform: mounted ? "none" : "translateY(28px)",
-              transition: "opacity 0.75s ease, transform 0.75s ease",
-            }}
-          >
-            {/* Badge */}
-            <div className="vts-badge-row">
-              <span className="vts-badge">{t("badge")}</span>
-              <span className="vts-tag">{t("hero_tag")}</span>
-            </div>
-
-            {/* JRC Partnership */}
-            <div className="vts-jrc-badge">
-              <span style={{ fontSize: 11, opacity: 0.6, letterSpacing: "1.5px", fontWeight: 700 }}>
-                {t("partner_label")}
-              </span>
-              <span className="jrc-logo">JRC</span>
-              <span style={{ fontSize: 11, opacity: 0.4 }}>Japan Radio Co.</span>
-            </div>
-
-            <h1 className="vts-title">
-              {t("title")}{" "}
-              <span className="vts-title-highlight">{t("title_highlight")}</span>
-            </h1>
-            <p className="vts-subtitle">{t("subtitle")}</p>
-
-            <div className="vts-actions">
-              <button
-                id="vts-cta-demo"
-                className="btn-primary"
-                onClick={() => document.getElementById("vts-form")?.scrollIntoView({ behavior: "smooth" })}
-              >
-                {t("cta_primary")}
-                <ArrowRight size={16} strokeWidth={2} />
-              </button>
-              <button
-                id="vts-cta-learn"
-                className="btn-outline"
-                onClick={() => document.getElementById("vts-overview")?.scrollIntoView({ behavior: "smooth" })}
-              >
-                {t("cta_secondary")}
-                <ChevronDown size={16} strokeWidth={2} />
-              </button>
-            </div>
-
-            {/* Quick stats */}
-            <div className="vts-mini-stats">
-              {STATS.map((s, i) => (
-                <div key={i} className="vts-mini-stat">
-                  <div className="vts-mini-stat-value">{s.value}</div>
-                  <div className="vts-mini-stat-label">{t(s.key)}</div>
-                </div>
-              ))}
-            </div>
+      <section className="about-hero vts-page-hero" id="vts-hero">
+        <div
+          className="about-hero-left"
+          style={{
+            opacity: mounted ? 1 : 0,
+            transform: mounted ? "none" : "translateY(16px)",
+            transition: "opacity 0.6s ease, transform 0.6s ease",
+          }}
+        >
+          <div className="vts-badge-row">
+            <span className="vts-badge">{t("badge")}</span>
+            <span className="vts-tag">{t("hero_tag")}</span>
           </div>
 
-          {/* Right radar */}
-          <div
-            className="vts-radar-container"
-            style={{
-              opacity: mounted ? 1 : 0,
-              transition: "opacity 1s ease 0.3s",
-            }}
-          >
-            <RadarDisplay />
-            {/* Live status indicator */}
-            <div className="vts-live-badge">
-              <span className="vts-live-dot" />
-              LIVE
-            </div>
+          <div className="vts-jrc-badge">
+            <span style={{ fontSize: 10, color: "var(--color-text-muted)", letterSpacing: "1px", fontWeight: 700 }}>
+              {t("partner_label")}
+            </span>
+            <span className="jrc-logo">JRC</span>
+            <span style={{ fontSize: 10, color: "var(--color-text-light)" }}>Japan Radio Co.</span>
+          </div>
+
+          <h1 className="vts-title">
+            {t("title")}{" "}
+            <span className="vts-title-highlight">{t("title_highlight")}</span>
+          </h1>
+          <p className="vts-subtitle">{t("subtitle")}</p>
+
+          <div className="vts-actions">
+            <button
+              id="vts-cta-demo"
+              className="btn-primary"
+              type="button"
+              onClick={() => document.getElementById("vts-form")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              {t("cta_primary")}
+              <ArrowRight size={16} strokeWidth={2} />
+            </button>
+            <button
+              id="vts-cta-learn"
+              className="btn-outline-dark"
+              type="button"
+              onClick={() => document.getElementById("vts-overview")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              {t("cta_secondary")}
+              <ChevronDown size={16} strokeWidth={2} />
+            </button>
+          </div>
+
+          <div className="vts-mini-stats">
+            {STATS.map((s) => (
+              <div key={s.key} className="vts-mini-stat">
+                <div className="vts-mini-stat-value">{s.value}</div>
+                <div className="vts-mini-stat-label">{t(s.key)}</div>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="vts-scroll-hint">
-          <ChevronDown size={20} color="var(--color-text-light)" />
+        <div
+          className="vts-radar-panel"
+          style={{
+            opacity: mounted ? 1 : 0,
+            transition: "opacity 0.8s ease 0.2s",
+          }}
+        >
+          <RadarDisplay />
+          <div className="vts-live-badge">
+            <span className="vts-live-dot" />
+            LIVE
+          </div>
         </div>
       </section>
 
-      {/* ── OVERVIEW ─────────────────────────────────── */}
-      <section className="section" id="vts-overview" style={{ borderTop: "1px solid var(--color-border)" }}>
+      <section className="section" id="vts-overview">
         <div className="container">
           <div className="vts-overview-grid">
-            {/* Hero image */}
             <div className="vts-overview-image">
               <Image
                 src="/taubien.avif"
                 alt="VTS Control Room"
                 fill
-                style={{ objectFit: "cover", borderRadius: "var(--radius-lg)" }}
+                style={{ objectFit: "cover" }}
               />
               <div className="vts-image-overlay" />
               <div className="vts-image-badge">
-                <ShieldCheck size={16} color="var(--color-primary)" strokeWidth={2} />
+                <ShieldCheck size={14} color="var(--color-primary)" strokeWidth={2} />
                 IALA Compliant · ISO27001
               </div>
             </div>
 
-            {/* Text */}
             <div>
-              <span className="section-label">
-                {t("section_label")}
-              </span>
-              <h2 className="section-title" style={{ marginBottom: 24 }}>
+              <span className="section-label">{t("section_label")}</span>
+              <h2 className="section-title" style={{ fontSize: "clamp(26px, 2.8vw, 36px)", marginBottom: 20 }}>
                 {t("overview_title")}
               </h2>
-              <p
-                style={{
-                  fontSize: 16,
-                  lineHeight: 1.8,
-                  color: "var(--color-text-muted)",
-                  marginBottom: 36,
-                }}
-              >
+              <p className="about-body-text" style={{ marginBottom: 28 }}>
                 {t("overview_body")}
               </p>
 
-              {/* JRC card */}
               <div className="vts-partner-card">
                 <div className="vts-partner-logo">JRC</div>
                 <div>
-                  <div
-                    style={{
-                      fontSize: 13,
-                      fontWeight: 700,
-                      color: "var(--color-dark)",
-                      marginBottom: 4,
-                    }}
-                  >
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "var(--color-dark)", marginBottom: 4 }}>
                     Japan Radio Co. (JRC)
                   </div>
                   <div style={{ fontSize: 12, color: "var(--color-text-muted)", lineHeight: 1.5 }}>
@@ -314,24 +276,19 @@ export default function VTSPage() {
         </div>
       </section>
 
-      {/* ── TECH STACK ───────────────────────────────── */}
       <section className="section section-light">
         <div className="container">
-          <div style={{ textAlign: "center", marginBottom: 56 }}>
-            <span className="section-label">
-              {t("section_label")}
-            </span>
-            <h2 className="section-title" style={{ marginBottom: 12 }}>
-              {t("tech_title")}
-            </h2>
-            <p style={{ fontSize: 15, color: "var(--color-text-muted)" }}>{t("tech_subtitle")}</p>
+          <div className="about-section-header">
+            <span className="section-label">{t("section_label")}</span>
+            <h2 className="section-title">{t("tech_title")}</h2>
+            <p className="about-section-desc">{t("tech_subtitle")}</p>
           </div>
 
           <div className="vts-tech-grid">
-            {TECH_STACK.map(({ Icon, key }, i) => (
-              <div key={i} className="vts-tech-card" id={`tech-${key}`}>
+            {TECH_STACK.map(({ Icon, key }) => (
+              <div key={key} className="vts-tech-card" id={`tech-${key}`}>
                 <div className="vts-tech-icon">
-                  <Icon size={28} color="var(--color-primary)" strokeWidth={1.5} />
+                  <Icon size={24} color="var(--color-primary)" strokeWidth={1.5} />
                 </div>
                 <div className="vts-tech-name">{t(`tech_${key}` as "tech_radar")}</div>
                 <div className="vts-tech-desc">{t(`tech_${key}_desc` as "tech_radar_desc")}</div>
@@ -355,22 +312,19 @@ export default function VTSPage() {
         </div>
       </section>
 
-      {/* ── CAPABILITIES ─────────────────────────────── */}
       <section className="section">
         <div className="container">
-          <div style={{ textAlign: "center", marginBottom: 56 }}>
+          <div className="about-section-header">
             <span className="section-label">CAPABILITIES</span>
-            <h2 className="section-title">
-              {t("capabilities_title")}
-            </h2>
+            <h2 className="section-title">{t("capabilities_title")}</h2>
           </div>
 
           <div className="vts-cap-grid">
             {CAPABILITIES.map(({ Icon, titleKey, bodyKey }, i) => (
-              <div key={i} className="vts-cap-card" id={`cap-${i + 1}`}>
+              <div key={titleKey} className="vts-cap-card" id={`cap-${i + 1}`}>
                 <div className="vts-cap-num">0{i + 1}</div>
                 <div className="vts-cap-icon">
-                  <Icon size={22} color="var(--color-primary)" strokeWidth={1.5} />
+                  <Icon size={20} color="var(--color-primary)" strokeWidth={1.5} />
                 </div>
                 <h3 className="vts-cap-title">{t(titleKey)}</h3>
                 <p className="vts-cap-body">{t(bodyKey)}</p>
@@ -380,32 +334,30 @@ export default function VTSPage() {
         </div>
       </section>
 
-      {/* ── CLIENTS DEPLOYED ─────────────────────────── */}
       <section className="section section-light">
         <div className="container">
           <div className="vts-clients-grid">
             <div>
               <span className="section-label">REFERENCES</span>
-              <h2 className="section-title" style={{ marginBottom: 20, marginTop: 8 }}>
+              <h2 className="section-title" style={{ fontSize: "clamp(26px, 2.8vw, 36px)", marginBottom: 16, marginTop: 8 }}>
                 {t("clients_title")}
               </h2>
-              <p style={{ fontSize: 15, lineHeight: 1.75, color: "var(--color-text-muted)", marginBottom: 36 }}>
+              <p className="about-body-text" style={{ marginBottom: 28 }}>
                 {t("clients_body")}
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                {CLIENTS.map((c, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                    <CheckCircle2 size={18} color="var(--color-primary)" strokeWidth={2} />
-                    <span style={{ fontSize: 15, color: "var(--color-text)", fontWeight: 500 }}>{c}</span>
-                  </div>
+              <ul className="vision-mission-list">
+                {CLIENTS.map((c) => (
+                  <li key={c} className="vision-mission-item">
+                    <CheckCircle2 size={16} color="var(--color-primary)" strokeWidth={2} style={{ flexShrink: 0, marginTop: 2 }} />
+                    <span>{c}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
 
-            {/* Stats panel */}
             <div className="vts-stats-panel">
               {STATS.map((s, i) => (
-                <div key={i} className="vts-stat-box" id={`vts-stat-${i + 1}`}>
+                <div key={s.key} className="vts-stat-box" id={`vts-stat-${i + 1}`}>
                   <div className="vts-stat-val">{s.value}</div>
                   <div className="vts-stat-key">{t(s.key)}</div>
                 </div>
@@ -415,31 +367,15 @@ export default function VTSPage() {
         </div>
       </section>
 
-      {/* ── DEMO FORM ─────────────────────────────────── */}
-      <section
-        id="vts-form"
-        className="section"
-        style={{ borderTop: "1px solid var(--color-border)" }}
-      >
+      <section className="section" id="vts-form">
         <div className="container">
           <div className="vts-form-grid">
-            {/* CTA text */}
             <div>
               <span className="section-label">GET STARTED</span>
-              <h2
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "clamp(24px,3vw,44px)",
-                  fontWeight: 800,
-                  color: "var(--color-dark)",
-                  lineHeight: 1.15,
-                  marginBottom: 20,
-                  marginTop: 8,
-                }}
-              >
+              <h2 className="about-hero-title" style={{ marginTop: 8, marginBottom: 16 }}>
                 {t("cta_title")}
               </h2>
-              <p style={{ fontSize: 16, color: "var(--color-text-muted)", lineHeight: 1.75, marginBottom: 36 }}>
+              <p className="about-body-text" style={{ marginBottom: 28 }}>
                 {t("cta_body")}
               </p>
               <a

@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import type { Metadata } from "next";
-import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import ContactCTA from "@/components/sections/ContactCTA";
 
 export const metadata: Metadata = {
   title: "Partners",
@@ -9,101 +10,65 @@ export const metadata: Metadata = {
 };
 
 const GLOBAL_PARTNERS = ["IBM", "HP", "Sun Oracle", "Cisco", "Microsoft", "Lenovo", "Kaspersky"];
-const SPECIALIZED_PARTNERS = ["Juniper Networks", "JRC", "EMC²", "Fortinet", "Acumatica", "Lenovo", "Kaspersky"];
+const SPECIALIZED_PARTNERS = ["Juniper Networks", "JRC", "EMC²", "Fortinet", "Acumatica"];
 
 export default function PartnersPage() {
   const t = useTranslations("partners");
 
   return (
-    <>
-      <section className="page-hero">
-        <div className="container">
-          <span className="section-label section-label-white">{t("section_label")}</span>
-          <h1 className="section-title section-title-white">{t("title")}</h1>
-          <p style={{ color: "rgba(255,255,255,0.55)", maxWidth: 580, fontSize: 16, lineHeight: 1.7, marginTop: 16 }}>
-            {t("description")}
-          </p>
+    <div className="partners-page">
+      <section className="about-hero">
+        <div className="about-hero-left">
+          <span className="section-label">{t("section_label")}</span>
+          <h1 className="about-hero-title">{t("title")}</h1>
+          <p className="about-body-text">{t("description")}</p>
+        </div>
+        <div className="about-hero-right">
+          <Image
+            src="/cang-bien.jpg"
+            alt="Apatek Vietnam Partners"
+            fill
+            sizes="52vw"
+            priority
+            style={{ objectFit: "cover" }}
+          />
+          <span className="about-hero-badge">Technology Partners</span>
         </div>
       </section>
 
-      {/* Global Partners */}
       <section className="section">
         <div className="container">
-          <div style={{ marginBottom: 56 }}>
+          <div className="about-section-header">
             <span className="section-label">{t("global_title")}</span>
             <h2 className="section-title">{t("global_title")}</h2>
           </div>
-          <div className="logo-grid">
-            {GLOBAL_PARTNERS.map((p) => (
-              <div key={p} id={`partner-${p.toLowerCase().replace(/\s/g, "-")}`} className="logo-item">
-                <span className="logo-text">{p}</span>
+          <div className="name-grid">
+            {GLOBAL_PARTNERS.map((partner) => (
+              <div key={partner} id={`partner-${partner.toLowerCase().replace(/\s/g, "-")}`} className="name-grid-cell">
+                {partner}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Specialized Partners */}
       <section className="section section-light">
         <div className="container">
-          <div style={{ marginBottom: 56 }}>
+          <div className="about-section-header">
             <span className="section-label">{t("specialized_title")}</span>
             <h2 className="section-title">{t("specialized_title")}</h2>
           </div>
-          <div className="logo-grid">
-            {SPECIALIZED_PARTNERS.map((p) => (
-              <div key={p} className="logo-item">
-                <span className="logo-text">{p}</span>
+          <div className="name-grid name-grid-3">
+            {SPECIALIZED_PARTNERS.map((partner) => (
+              <div key={partner} className="name-grid-cell">
+                {partner}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section
-        style={{
-          background: "var(--color-primary)",
-          padding: "80px 0",
-          textAlign: "center",
-        }}
-      >
-        <div className="container">
-          <h2
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(28px,4vw,48px)",
-              fontWeight: 800,
-              color: "white",
-              marginBottom: 16,
-            }}
-          >
-            Become a Partner
-          </h2>
-          <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 17, marginBottom: 32 }}>
-            Join our growing ecosystem of technology partners
-          </p>
-          <a
-            href="mailto:Quan.nguyen@apatek.com.vn"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 8,
-              background: "white",
-              color: "var(--color-primary)",
-              padding: "14px 32px",
-              borderRadius: "var(--radius)",
-              fontFamily: "var(--font-display)",
-              fontWeight: 700,
-              fontSize: 15,
-              textDecoration: "none",
-              transition: "transform 0.2s",
-            }}
-          >
-            Contact Us <ArrowRight size={16} strokeWidth={2} />
-          </a>
-        </div>
-      </section>
-    </>
+      <ContactCTA />
+    </div>
   );
 }
