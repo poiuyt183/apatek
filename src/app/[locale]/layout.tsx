@@ -6,6 +6,7 @@ import { getMessages } from "next-intl/server";
 import Navbar from "@/components/layout/Navbar";
 import "../globals.css";
 import Footer from "@/components/layout/Footer";
+import { bodyFont, displayFont } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: {
@@ -47,11 +48,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </head>
-      <body>
+      <body className={`${displayFont.variable} ${bodyFont.variable}`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main>{children}</main>

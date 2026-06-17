@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap");
 @import "tailwindcss";
 
 /* =========================================
    APATEK DESIGN SYSTEM
    Brand: Red #EE1C27 | Black #1A1A1A
-   Fonts: Outfit (display) + Source Sans 3 (body)
+   Fonts: Plus Jakarta Sans (display) + Source Sans 3 (body)
+   Loaded via next/font in src/lib/fonts.ts (latin + vietnamese)
    ========================================= */
 
 :root {
@@ -26,9 +26,9 @@
   --color-border: #e8e8e8;
   --color-border-dark: #2a2a2a;
 
-  /* Typography */
-  --font-display: "Outfit", sans-serif;
-  --font-body: "Source Sans 3", sans-serif;
+  /* Typography (next/font variables set on <body>) */
+  --font-display: var(--font-outfit), "Plus Jakarta Sans", sans-serif;
+  --font-body: var(--font-source-sans), "Source Sans 3", sans-serif;
 
   /* Spacing (8pt grid) */
   --space-1: 4px;
