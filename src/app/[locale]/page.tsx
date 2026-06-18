@@ -1,11 +1,10 @@
-import { useTranslations } from "next-intl";
 import type { Metadata } from "next";
-import Link from "next/link";
 import HeroSection from "@/components/sections/HeroSection";
 import ServicesPreview from "@/components/sections/ServicesPreview";
 import StatsBar from "@/components/sections/StatsBar";
 import ClientsPreview from "@/components/sections/ClientsPreview";
 import ContactCTA from "@/components/sections/ContactCTA";
+import { HERO_VIDEO_POSTER, HERO_VIDEO_URL } from "@/lib/hero-media";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -16,6 +15,10 @@ export const metadata: Metadata = {
 export default function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   return (
     <>
+      <link rel="preconnect" href="https://res.cloudinary.com" />
+      <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+      <link rel="preload" as="image" href={HERO_VIDEO_POSTER} />
+      <link rel="preload" as="video" href={HERO_VIDEO_URL} type="video/mp4" />
       <HeroSection />
       <StatsBar />
       <ServicesPreview />
