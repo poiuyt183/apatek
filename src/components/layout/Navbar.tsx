@@ -19,6 +19,8 @@ const NAV_LINKS = [
   { key: "products", href: "/products-services", hasDropdown: true },
   { key: "partners", href: "/partners" },
   { key: "clients", href: "/clients" },
+  { key: "news", href: "/news" },
+  { key: "careers", href: "/careers" },
   { key: "vts", href: "/vts" },
 ] as const;
 
@@ -29,6 +31,8 @@ const VI_NAV_LINKS = [
   { key: "products", href: "/san-pham-dich-vu", hasDropdown: true },
   { key: "partners", href: "/doi-tac" },
   { key: "clients", href: "/khach-hang" },
+  { key: "news", href: "/tin-tuc" },
+  { key: "careers", href: "/tuyen-dung" },
   { key: "vts", href: "/vts" },
 ] as const;
 

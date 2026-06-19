@@ -66,7 +66,7 @@ export default function HistoryPage() {
               justifyContent: "center",
             }}
           >
-            {["Acumatica", "Fortinet", "Cisco", "Microsoft", "JRC", "IBM", "HP"].map((p) => (
+            {["Acumatica", "Fortinet", "Cisco", "Microsoft", "JRC", "Viettel", "HP"].map((p) => (
               <div
                 key={p}
                 style={{

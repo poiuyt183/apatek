@@ -37,6 +37,14 @@ export const routing = defineRouting({
       en: "/contact",
       vi: "/lien-he",
     },
+    "/tin-tuc": {
+      en: "/news",
+      vi: "/tin-tuc",
+    },
+    "/tuyen-dung": {
+      en: "/careers",
+      vi: "/tuyen-dung",
+    },
   },
 });
 

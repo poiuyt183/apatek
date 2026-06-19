@@ -10,7 +10,27 @@ export const metadata: Metadata = {
 };
 
 const GLOBAL_PARTNERS = ["IBM", "HP", "Sun Oracle", "Cisco", "Microsoft", "Lenovo", "Kaspersky"];
-const SPECIALIZED_PARTNERS = ["Juniper Networks", "JRC", "EMC²", "Fortinet", "Acumatica"];
+const SPECIALIZED_PARTNERS = ["Tidalis", "JRC",  "Sophos","Axis", "Terma", "IHM", "iPRO"];
+
+const GLOBAL_PARTNERS_LOGOS: Record<string, string> = {
+  IBM: "/partner/partners/logo-ibm.png",
+  HP: "/partner/partners/logo-hp.png",
+  "Sun Oracle": "/partner/partners/logo-sun-oracle.png",
+  Cisco: "/partner/partners/logo-cisco.png",
+  Microsoft: "/partner/partners/logo-microsoft.png",
+  Lenovo: "/partner/partners/logo-lenovo.png",
+  Kaspersky: "/partner/partners/logo-kaspersky.png",
+};
+
+const SPECIALIZED_PARTNERS_LOGOS: Record<string, string> = {
+  Tidalis: "/partner/partners/logo-tidalis.svg",
+  JRC: "/partner/partners/logo-jrc.png",
+  Axis: "/partner/partners/logo-axis.png",
+  Sophos: "/partner/partners/logo-sophos.png",
+  IHM: "/partner/partners/logo-ihm.webp",
+  iPRO: "/partner/partners/logo-ipro.png",
+  Terma: "/partner/partners/logo-terma.png",
+};
 
 export default function PartnersPage() {
   const t = useTranslations("partners");
@@ -45,7 +65,13 @@ export default function PartnersPage() {
           <div className="name-grid">
             {GLOBAL_PARTNERS.map((partner) => (
               <div key={partner} id={`partner-${partner.toLowerCase().replace(/\s/g, "-")}`} className="name-grid-cell">
-                {partner}
+                <Image
+                  src={GLOBAL_PARTNERS_LOGOS[partner]}
+                  alt={partner}
+                  width={120}
+                  height={80}
+                  style={{ objectFit: "contain" }}
+                />
               </div>
             ))}
           </div>
@@ -61,7 +87,13 @@ export default function PartnersPage() {
           <div className="name-grid name-grid-3">
             {SPECIALIZED_PARTNERS.map((partner) => (
               <div key={partner} className="name-grid-cell">
-                {partner}
+                <Image
+                  src={SPECIALIZED_PARTNERS_LOGOS[partner]}
+                  alt={partner}
+                  width={120}
+                  height={80}
+                  style={{ objectFit: "contain" }}
+                />
               </div>
             ))}
           </div>

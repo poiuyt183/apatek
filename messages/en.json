@@ -8,6 +8,8 @@
     "team": "Our Team",
     "partners": "Partners",
     "clients": "Clients",
+    "news": "News",
+    "careers": "Careers",
     "contact": "Contact",
     "vts": "VTS"
   },
@@ -82,9 +84,9 @@
     "p1_title": "Distribution Channel Management",
     "p1_body": "Distribution Channel Management (DMS) solution — Applied for the FMCG industry, helping optimize the supply chain.",
     "p1_tag": "DMS / FMCG",
-    "p2_title": "Inspection Industry Software",
-    "p2_body": "Management solutions: Inspection plans, Asset management, Complaints and denunciations — Applied for the Inspection sector.",
-    "p2_tag": "GOV / INSPECTION",
+    "p2_title": "Monitoring dredging operations using AIS.",
+    "p2_body": "Dredging operations monitoring solution using AIS technology - Tracks dredging vessels, dredging equipment and maritime channel maintenance. Provides real-time data to optimize management and ensure maritime safety.",
+    "p2_tag": "MARITIME / NODGING",
     "p3_title": "Security & System Integration",
     "p3_body": "Security, information safety, and system integration solutions for enterprises. Video conferencing & security surveillance systems.",
     "p3_tag": "SECURITY / ICT",
@@ -175,6 +177,95 @@
     "description": "We are proud to partner with leading organizations across government, technology, finance, manufacturing, and services. Each client is a success story reflecting long-term trust and cooperation.",
     "gov_title": "Government & Major Groups",
     "enterprise_title": "Enterprises & Brands"
+  },
+  "news": {
+    "title": "Latest News",
+    "section_label": "NEWS & INSIGHTS",
+    "description": "Stay updated with Apatek's latest projects, partnerships, and technology milestones across Vietnam.",
+    "hero_badge": "Company Updates",
+    "categories": {
+      "maritime": "Maritime",
+      "technology": "Technology",
+      "innovation": "Innovation"
+    },
+    "articles": {
+      "vts-port-authorities-2025": {
+        "title": "Apatek Deploys VTS Solutions to Vietnam Port Authorities",
+        "excerpt": "Apatek completes rollout of JRC-powered VTS platform for regional port authorities, delivering 24/7 situational awareness and traffic control.",
+        "body1": "Apatek Vietnam has successfully deployed its Vessel Traffic Service (VTS) solution to multiple port authorities across Vietnam, marking a major milestone in the company's maritime technology portfolio.",
+        "body2": "Built on JRC technology and integrated with radar, AIS, CCTV, and environmental sensors, the platform gives VTS operators a unified real-time picture of vessel movements, enabling faster decision-making and safer waterways.",
+        "body3": "The deployment reinforces Apatek's position as a trusted technology partner for mission-critical maritime operations, with full IALA compliance and resilient architecture designed for continuous operations."
+      },
+      "digital-transformation-tax": {
+        "title": "Apatek Supports Digital Transformation for Tax Administration",
+        "excerpt": "Apatek partners with government agencies to modernize tax administration systems, improving efficiency and data security at national scale.",
+        "body1": "Apatek Vietnam continues to expand its footprint in the public sector with digital transformation projects for tax administration, helping agencies streamline operations and improve service delivery.",
+        "body2": "The solutions integrate secure data management, workflow automation, and analytics dashboards tailored to the requirements of large government organizations.",
+        "body3": "With proven experience serving the General Department of Taxation and Ministry of Finance, Apatek brings enterprise-grade reliability to national-scale digital infrastructure."
+      },
+      "ai-big-data-enterprise": {
+        "title": "Apatek Launches AI & Big Data Solutions for Enterprises",
+        "excerpt": "New AI and Big Data capabilities help enterprises unlock insights from operational data and accelerate intelligent decision-making.",
+        "body1": "Apatek has introduced a new suite of AI and Big Data solutions designed to help enterprises transform raw operational data into actionable business intelligence.",
+        "body2": "From predictive analytics to automated reporting, the platform supports FMCG, manufacturing, and maritime clients in optimizing supply chains and improving operational visibility.",
+        "body3": "This launch reflects Apatek's 2025 strategy to combine domain expertise with modern data platforms, enabling clients to move faster in an increasingly data-driven economy."
+      }
+    }
+  },
+  "careers": {
+    "title": "Careers",
+    "section_label": "JOIN US",
+    "description": "Build the future of maritime and enterprise technology with a team that values innovation, quality, and customer impact.",
+    "hero_badge": "We're Hiring",
+    "openings_label": "OPEN POSITIONS",
+    "openings_title": "Current Opportunities",
+    "openings_desc": "Explore roles across engineering, maritime solutions, and business development. We welcome talented professionals who share our passion for technology.",
+    "apply": "Apply Now",
+    "benefits_label": "WHY APATEK",
+    "benefits_title": "Why Work With Us",
+    "benefit1_title": "Meaningful Projects",
+    "benefit1_body": "Work on mission-critical systems for government agencies, port authorities, and leading enterprises.",
+    "benefit2_title": "Expert Team",
+    "benefit2_body": "Learn from experienced engineers and consultants across maritime, security, and enterprise software.",
+    "benefit3_title": "Growth & Learning",
+    "benefit3_body": "Continuous training, certifications, and exposure to international technology partners.",
+    "benefit4_title": "Dynamic Culture",
+    "benefit4_body": "A collaborative environment that rewards initiative, quality, and customer-centric thinking.",
+    "departments": {
+      "engineering": "Engineering",
+      "maritime": "Maritime Solutions",
+      "business": "Business Development"
+    },
+    "locations": {
+      "hanoi": "Hanoi",
+      "hcmc": "Ho Chi Minh City"
+    },
+    "types": {
+      "fulltime": "Full-time"
+    },
+    "jobs": {
+      "software-engineer": {
+        "title": "Software Engineer",
+        "summary": "Design and develop enterprise applications, APIs, and integration solutions for government and commercial clients.",
+        "req1": "3+ years experience with Java, .NET, or Node.js",
+        "req2": "Experience with databases, REST APIs, and system integration",
+        "req3": "Strong problem-solving skills and team collaboration"
+      },
+      "vts-engineer": {
+        "title": "VTS Solutions Engineer",
+        "summary": "Implement and support Vessel Traffic Service systems for port authorities using JRC maritime technology.",
+        "req1": "Background in maritime systems, radar/AIS, or SCADA",
+        "req2": "Willingness to travel to port sites across Vietnam",
+        "req3": "Technical documentation and client-facing communication skills"
+      },
+      "business-development": {
+        "title": "Business Development Executive",
+        "summary": "Identify and develop new business opportunities in enterprise software and maritime technology markets.",
+        "req1": "2+ years in B2B sales or business development",
+        "req2": "Understanding of IT services or maritime industry preferred",
+        "req3": "Fluent Vietnamese; English communication is a plus"
+      }
+    }
   },
   "contact": {
     "title": "Contact Us",

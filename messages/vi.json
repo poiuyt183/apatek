@@ -8,6 +8,8 @@
     "team": "Đội Ngũ",
     "partners": "Đối Tác",
     "clients": "Khách Hàng",
+    "news": "Tin Tức",
+    "careers": "Tuyển Dụng",
     "contact": "Liên Hệ",
     "vts": "VTS"
   },
@@ -82,9 +84,9 @@
     "p1_title": "Quản Lý Kênh Phân Phối",
     "p1_body": "Giải pháp quản lý kênh phân phối (DMS) – Ứng dụng cho ngành FMCG, giúp tối ưu chuỗi cung ứng.",
     "p1_tag": "DMS / FMCG",
-    "p2_title": "Phần Mềm Ngành Thanh Tra",
-    "p2_body": "Giải pháp quản lý: Kế hoạch thanh tra, Quản lý tài sản, Khiếu nại khiếu kiện - Ứng dụng cho ngành Thanh tra.",
-    "p2_tag": "CHÍNH PHỦ / THANH TRA",
+    "p2_title": "Giám sát nạo vét bằng AIS",
+    "p2_body": "Giải pháp giám sát hoạt động khoét sâu sử dụng công nghệ AIS - Theo dõi tàu khoét sâu, thiết bị nạo vét và bảo trì lạch hàng hải. Cung cấp dữ liệu thời gian thực giúp tối ưu quản lý và đảm bảo an toàn hàng hải.",
+    "p2_tag": "HÀNG HẢI / NẠO VÉT",
     "p3_title": "Bảo Mật & Tích Hợp Hệ Thống",
     "p3_body": "Giải pháp bảo mật, an toàn thông tin, tích hợp hệ thống cho doanh nghiệp. Hệ thống hội nghị truyền hình & giám sát an ninh.",
     "p3_tag": "BẢO MẬT / ICT",
@@ -175,6 +177,95 @@
     "description": "Chúng tôi tự hào được hợp tác với các đơn vị, công ty hàng đầu trong nhiều ngành nghề từ khối chính phủ, tập đoàn công nghệ, tài chính đến sản xuất và dịch vụ.",
     "gov_title": "Nhà Nước & Tập Đoàn Lớn",
     "enterprise_title": "Doanh Nghiệp & Thương Hiệu"
+  },
+  "news": {
+    "title": "Tin Tức Mới Nhất",
+    "section_label": "TIN TỨC & THÔNG TIN",
+    "description": "Cập nhật các dự án, đối tác và cột mốc công nghệ mới nhất của Apatek tại Việt Nam.",
+    "hero_badge": "Tin Công Ty",
+    "categories": {
+      "maritime": "Hàng Hải",
+      "technology": "Công Nghệ",
+      "innovation": "Đổi Mới"
+    },
+    "articles": {
+      "vts-port-authorities-2025": {
+        "title": "Apatek Triển Khai Giải Pháp VTS Tại Các Cảng Vụ Việt Nam",
+        "excerpt": "Apatek hoàn tất triển khai nền tảng VTS công nghệ JRC cho các Cảng vụ khu vực, cung cấp nhận thức tình huống và kiểm soát giao thông 24/7.",
+        "body1": "Apatek Việt Nam đã triển khai thành công giải pháp Vessel Traffic Service (VTS) cho nhiều Cảng vụ trên cả nước, đánh dấu cột mốc quan trọng trong danh mục công nghệ hàng hải của công ty.",
+        "body2": "Xây dựng trên nền tảng công nghệ JRC và tích hợp radar, AIS, CCTV cùng cảm biến môi trường, hệ thống mang đến bức tranh thời gian thực thống nhất, giúp điều hành viên ra quyết định nhanh hơn và đảm bảo an toàn hàng hải.",
+        "body3": "Việc triển khai củng cố vị thế của Apatek là đối tác công nghệ tin cậy cho các hoạt động hàng hải quan trọng, tuân thủ tiêu chuẩn IALA với kiến trúc dự phòng cho vận hành liên tục."
+      },
+      "digital-transformation-tax": {
+        "title": "Apatek Hỗ Trợ Chuyển Đổi Số Cho Ngành Thuế",
+        "excerpt": "Apatek hợp tác với các cơ quan nhà nước hiện đại hóa hệ thống quản lý thuế, nâng cao hiệu quả và bảo mật dữ liệu quy mô quốc gia.",
+        "body1": "Apatek Việt Nam tiếp tục mở rộng trong lĩnh vực công với các dự án chuyển đổi số cho quản lý thuế, giúp các cơ quan tinh gọn quy trình và nâng cao chất lượng phục vụ.",
+        "body2": "Giải pháp tích hợp quản lý dữ liệu an toàn, tự động hóa quy trình và bảng phân tích phù hợp yêu cầu của các tổ chức chính phủ quy mô lớn.",
+        "body3": "Với kinh nghiệm phục vụ Tổng Cục Thuế và Bộ Tài Chính, Apatek mang đến độ tin cậy cấp doanh nghiệp cho hạ tầng số quốc gia."
+      },
+      "ai-big-data-enterprise": {
+        "title": "Apatek Ra Mắt Giải Pháp AI & Big Data Cho Doanh Nghiệp",
+        "excerpt": "Năng lực AI và Big Data mới giúp doanh nghiệp khai thác insight từ dữ liệu vận hành và đẩy nhanh ra quyết định thông minh.",
+        "body1": "Apatek giới thiệu bộ giải pháp AI và Big Data giúp doanh nghiệp biến dữ liệu vận hành thành thông tin kinh doanh có thể hành động.",
+        "body2": "Từ phân tích dự báo đến báo cáo tự động, nền tảng hỗ trợ khách hàng FMCG, sản xuất và hàng hải tối ưu chuỗi cung ứng và nâng cao khả năng giám sát vận hành.",
+        "body3": "Ra mắt này phản ánh chiến lược 2025 của Apatek — kết hợp chuyên môn ngành với nền tảng dữ liệu hiện đại, giúp khách hàng bứt phá trong nền kinh tế số."
+      }
+    }
+  },
+  "careers": {
+    "title": "Tuyển Dụng",
+    "section_label": "GIA NHẬP APATEK",
+    "description": "Cùng xây dựng tương lai công nghệ hàng hải và doanh nghiệp với đội ngũ coi trọng đổi mới, chất lượng và giá trị khách hàng.",
+    "hero_badge": "Đang Tuyển Dụng",
+    "openings_label": "VỊ TRÍ MỞ",
+    "openings_title": "Cơ Hội Nghề Nghiệp",
+    "openings_desc": "Khám phá các vị trí kỹ thuật, giải pháp hàng hải và phát triển kinh doanh. Chúng tôi chào đón những chuyên gia đam mê công nghệ.",
+    "apply": "Ứng Tuyển Ngay",
+    "benefits_label": "VÌ SAO CHỌN APATEK",
+    "benefits_title": "Lý Do Làm Việc Cùng Chúng Tôi",
+    "benefit1_title": "Dự Án Ý Nghĩa",
+    "benefit1_body": "Tham gia các hệ thống quan trọng cho cơ quan nhà nước, Cảng vụ và doanh nghiệp hàng đầu.",
+    "benefit2_title": "Đội Ngũ Chuyên Gia",
+    "benefit2_body": "Học hỏi từ kỹ sư và tư vấn giàu kinh nghiệm trong hàng hải, an ninh và phần mềm doanh nghiệp.",
+    "benefit3_title": "Phát Triển & Học Tập",
+    "benefit3_body": "Đào tạo liên tục, chứng chỉ và tiếp cận đối tác công nghệ quốc tế.",
+    "benefit4_title": "Văn Hóa Năng Động",
+    "benefit4_body": "Môi trường hợp tác, khuyến khích chủ động, chất lượng và tư duy lấy khách hàng làm trung tâm.",
+    "departments": {
+      "engineering": "Kỹ Thuật",
+      "maritime": "Giải Pháp Hàng Hải",
+      "business": "Phát Triển Kinh Doanh"
+    },
+    "locations": {
+      "hanoi": "Hà Nội",
+      "hcmc": "TP. Hồ Chí Minh"
+    },
+    "types": {
+      "fulltime": "Toàn thời gian"
+    },
+    "jobs": {
+      "software-engineer": {
+        "title": "Kỹ Sư Phần Mềm",
+        "summary": "Thiết kế và phát triển ứng dụng doanh nghiệp, API và giải pháp tích hợp cho khách hàng chính phủ và thương mại.",
+        "req1": "Từ 3 năm kinh nghiệm Java, .NET hoặc Node.js",
+        "req2": "Kinh nghiệm cơ sở dữ liệu, REST API và tích hợp hệ thống",
+        "req3": "Kỹ năng giải quyết vấn đề và làm việc nhóm tốt"
+      },
+      "vts-engineer": {
+        "title": "Kỹ Sư Giải Pháp VTS",
+        "summary": "Triển khai và hỗ trợ hệ thống VTS cho Cảng vụ với công nghệ hàng hải JRC.",
+        "req1": "Nền tảng hệ thống hàng hải, radar/AIS hoặc SCADA",
+        "req2": "Sẵn sàng công tác tại các cảng trên cả nước",
+        "req3": "Kỹ năng tài liệu kỹ thuật và giao tiếp với khách hàng"
+      },
+      "business-development": {
+        "title": "Chuyên Viên Phát Triển Kinh Doanh",
+        "summary": "Tìm kiếm và phát triển cơ hội kinh doanh trong phần mềm doanh nghiệp và công nghệ hàng hải.",
+        "req1": "Từ 2 năm kinh nghiệm bán hàng B2B hoặc phát triển kinh doanh",
+        "req2": "Hiểu biết dịch vụ CNTT hoặc ngành hàng hải là lợi thế",
+        "req3": "Tiếng Việt thành thạo; tiếng Anh giao tiếp là điểm cộng"
+      }
+    }
   },
   "contact": {
     "title": "Liên Hệ",

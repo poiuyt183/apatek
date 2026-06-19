@@ -1211,6 +1211,75 @@ img {
 }
 
 /* ─── Clients / Partners Logo Grid ─── */
+.clients-preview {
+  background-color: var(--color-bg-light);
+}
+
+.clients-preview-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.clients-preview-header .section-label {
+  margin-bottom: 14px;
+}
+
+.clients-preview-header .section-title {
+  font-size: clamp(30px, 3.5vw, 44px);
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
+.clients-preview-desc {
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.clients-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+  background-color: var(--color-white);
+}
+
+.clients-preview-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 108px;
+  padding: 24px 32px;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-white);
+  transition: background-color var(--transition-fast);
+}
+
+.clients-preview-card--gov {
+  min-height: 168px;
+  padding: 32px 40px;
+}
+
+.clients-preview-card:hover {
+  background-color: #fafafa;
+}
+
+.clients-preview-logo {
+  position: relative;
+  width: 100%;
+  max-width: 180px;
+  height: 60px;
+}
+
+.clients-preview-card--gov .clients-preview-logo {
+  max-width: 240px;
+  height: 96px;
+}
+
 .logo-grid-clean {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1234,6 +1303,62 @@ img {
 
 .logo-card:hover {
   background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .clients-preview-header {
+    margin-bottom: 36px;
+  }
+
+  .clients-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clients-preview-card {
+    min-height: 96px;
+    padding: 18px 20px;
+  }
+
+  .clients-preview-card--gov {
+    min-height: 130px;
+    padding: 24px 28px;
+  }
+
+  .clients-preview-logo {
+    max-width: 150px;
+    height: 52px;
+  }
+
+  .clients-preview-card--gov .clients-preview-logo {
+    max-width: 190px;
+    height: 76px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clients-preview-card {
+    min-height: 88px;
+    padding: 14px 16px;
+  }
+
+  .clients-preview-card--gov {
+    min-height: 112px;
+    padding: 20px 22px;
+  }
+
+  .clients-preview-logo {
+    max-width: 120px;
+    height: 44px;
+  }
+
+  .clients-preview-card--gov .clients-preview-logo {
+    max-width: 150px;
+    height: 64px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -2798,7 +2923,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 88px;
+  min-height: 140px;
 }
 
 .name-grid-cell:hover {
@@ -2830,7 +2955,7 @@ img {
 
 .clients-detail-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--color-border);
   border-left: 1px solid var(--color-border);
 }
@@ -3709,4 +3834,355 @@ img {
 .vts-light .form-input:focus {
   border-color: var(--color-primary);
   background-color: var(--color-white);
+}
+
+/* =========================================
+   NEWS
+   ========================================= */
+
+.news-preview-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.news-preview-header .section-label {
+  margin-bottom: 14px;
+}
+
+.news-preview-header .section-title {
+  font-size: clamp(30px, 3.5vw, 44px);
+  margin-bottom: 16px;
+}
+
+.news-preview-desc {
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+.news-grid-page {
+  background-color: var(--color-white);
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--color-white);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color var(--transition-fast);
+}
+
+.news-card:hover {
+  background-color: #fafafa;
+}
+
+.news-card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.news-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px 28px 28px;
+}
+
+.news-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 11px;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.news-card-category {
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.news-card-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.news-card-excerpt {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.news-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: auto;
+}
+
+.news-preview-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.news-detail-hero {
+  padding: calc(var(--navbar-height) + 48px) 0 32px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.news-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  margin-bottom: 24px;
+  transition: color var(--transition-fast);
+}
+
+.news-detail-back:hover {
+  color: var(--color-primary);
+}
+
+.news-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.news-detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--color-dark);
+  max-width: 820px;
+}
+
+.news-detail-cover {
+  padding: 32px 0 0;
+}
+
+.news-detail-image {
+  position: relative;
+  height: min(420px, 50vw);
+  max-height: 480px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.news-detail-body {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-card-image {
+    height: 180px;
+  }
+
+  .news-card-body {
+    padding: 20px 22px 24px;
+  }
+}
+
+/* =========================================
+   CAREERS
+   ========================================= */
+
+.careers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+.career-card {
+  padding: 32px 36px;
+  background-color: var(--color-white);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.career-card-header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.career-card-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(238, 28, 39, 0.08);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.career-card-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.career-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.career-card-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.career-card-summary {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.career-card-requirements {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.career-card-requirements li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.career-card-requirements li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+}
+
+.career-card-apply {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: gap var(--transition-fast);
+}
+
+.career-card-apply:hover {
+  gap: 12px;
+}
+
+.careers-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.careers-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+.careers-benefit-item {
+  padding: 28px 24px;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-white);
+}
+
+.careers-benefit-item h4 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.careers-benefit-item p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .careers-benefits {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .careers-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-link {
+    font-size: 12px;
+    padding: 6px 8px;
+    letter-spacing: 0.2px;
+  }
 }

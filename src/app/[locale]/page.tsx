@@ -3,6 +3,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import ServicesPreview from "@/components/sections/ServicesPreview";
 import StatsBar from "@/components/sections/StatsBar";
 import ClientsPreview from "@/components/sections/ClientsPreview";
+import NewsPreview from "@/components/sections/NewsPreview";
 import ContactCTA from "@/components/sections/ContactCTA";
 import { HERO_VIDEO_POSTER, HERO_VIDEO_URL } from "@/lib/hero-media";
 
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     "Apatek Vietnam — Pioneer technology company providing digital transformation, information security and enterprise management solutions.",
 };
 
-export default function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+
   return (
     <>
       <link rel="preconnect" href="https://res.cloudinary.com" />
@@ -23,6 +26,7 @@ export default function HomePage({ params }: { params: Promise<{ locale: string 
       <StatsBar />
       <ServicesPreview />
       <ClientsPreview />
+      <NewsPreview locale={locale} />
       <ContactCTA />
     </>
   );

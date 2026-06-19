@@ -10,14 +10,12 @@ export const metadata: Metadata = {
 };
 
 const GOV_CLIENTS = [
-  { name: "Tổng Cục Thuế", desc: "General Department of Taxation" },
-  { name: "Cục Hàng Hải VN", desc: "Vietnam Maritime Administration" },
-  { name: "Thanh Tra VN", desc: "Vietnam Government Inspectorate" },
-  { name: "Bộ Tài Chính", desc: "Ministry of Finance" },
-  { name: "Viettel", desc: "Vietnam's #1 Telecom" },
-  { name: "AO Smith", desc: "Water Heating Solutions" },
-  { name: "HABECO", desc: "Hanoi Beer Alcohol Beverage" },
-  { name: "Casper", desc: "Consumer Electronics" },
+  { name: "Tổng Cục Thuế" },
+  { name: "Cục Hàng Hải VN" },
+  { name: "Thanh Tra VN" },
+  { name: "Viettel" },
+  { name: "HABECO" },
+  { name: "Casper" },
 ];
 
 const ENT_CLIENTS = [
@@ -40,9 +38,23 @@ const LOGO_MAP: Record<string, string> = {
   "Cục Hàng Hải VN": "/partner/Logo_Cục_Hàng_hải_Việt_Nam-removebg-preview.png",
   "Thanh Tra VN": "/partner/logo-thanh-tra-viet-nam.png",
   "Viettel": "/partner/logo-viettel.png",
-  "AO Smith": "/partner/logo-ao-smith.png",
   "HABECO": "/partner/logo-habeco.png",
   "Casper": "/partner/logo-casper.png",
+};
+
+const ENT_LOGO_MAP: Record<string, string> = {
+  "Samsung": "/clients/logo-samsung.png",
+  "VNPAY": "/clients/logo-vnpay.png",
+  "NEC": "/clients/logo-nec.png",
+  "Mộc Châu Milk": "/clients/logo-mocchau.png",
+  "Sữa Ba Vì": "/clients/logo-bavi.png",
+  "Wilmar": "/clients/logo-wilmar.png",
+  "AIA": "/clients/logo-aia.png",
+  "Nhất Nhất": "/clients/logo-nhatnhat.png",
+  "Nam Dược": "/clients/logo-namduoc.png",
+  "Rạng Đông": "/clients/logo-rangdong.png",
+  "Men's Vodka": "/clients/logo-men-vodka.png",
+  "VICOSTONE": "/clients/logo-vicostone.png",
 };
 
 export default function ClientsPage() {
@@ -87,13 +99,12 @@ export default function ClientsPage() {
                         alt={client.name}
                         fill
                         sizes="(max-width: 640px) 50vw, 25vw"
-                        style={{ objectFit: "contain" }}
+                        style={{ objectFit: "contain", transform: client.name === "Viettel" ? "scale(0.6)" : "scale(1)" }}
                       />
                     ) : (
                       <span className="client-detail-name">{client.name}</span>
                     )}
                   </div>
-                  <p className="client-detail-desc">{client.desc}</p>
                 </div>
               );
             })}
@@ -108,12 +119,24 @@ export default function ClientsPage() {
             <h2 className="section-title">{t("enterprise_title")}</h2>
           </div>
           <div className="name-grid">
-            {ENT_CLIENTS.map((client) => (
-              <div key={client.name} className="name-grid-cell name-grid-cell-stack">
-                <span className="name-grid-cell-title">{client.name}</span>
-                <span className="name-grid-cell-desc">{client.desc}</span>
-              </div>
-            ))}
+            {ENT_CLIENTS.map((client) => {
+              const logoUrl = ENT_LOGO_MAP[client.name];
+              return (
+                <div key={client.name} className="name-grid-cell">
+                  {logoUrl ? (
+                    <Image
+                      src={logoUrl}
+                      alt={client.name}
+                      width={120}
+                      height={80}
+                      style={{ objectFit: "contain" }}
+                    />
+                  ) : (
+                    <span className="name-grid-cell-title">{client.name}</span>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

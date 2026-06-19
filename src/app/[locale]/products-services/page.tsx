@@ -16,7 +16,6 @@ const PRODUCT_FEATURES: Record<string, string[]> = {
     "Maritime traffic monitoring",
     "Real-time vessel tracking",
     "Port authority integration",
-    "JRC partnership",
   ],
   "product-1": [
     "Supply chain optimization",
@@ -31,7 +30,7 @@ const PRODUCT_FEATURES: Record<string, string[]> = {
     "Government sector ready",
   ],
   "product-3": [
-    "Fortinet security solutions",
+    "Sophos security solutions",
     "Video conferencing systems",
     "Security surveillance",
     "System integration",
