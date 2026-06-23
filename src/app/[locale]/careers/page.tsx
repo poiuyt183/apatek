@@ -7,9 +7,9 @@ import ContactCTA from "@/components/sections/ContactCTA";
 import { CAREER_JOBS } from "@/data/careers";
 
 export const metadata: Metadata = {
-  title: "Careers",
+  title: "Tuyển dụng",
   description:
-    "Join Apatek Vietnam — build maritime technology, enterprise software, and digital transformation solutions.",
+    "Gia nhập Apatek Vietnam — xây dựng giải pháp công nghệ hàng hải và chuyển đổi số cho doanh nghiệp Việt Nam và khu vực.",
 };
 
 export default async function CareersPage({ params }: { params: Promise<{ locale: string }> }) {

@@ -8,9 +8,13 @@ import ContactCTA from "@/components/sections/ContactCTA";
 import { HERO_VIDEO_POSTER, HERO_VIDEO_URL } from "@/lib/hero-media";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Kiến tạo tương lai hàng hải",
   description:
-    "Apatek Vietnam — Pioneer technology company providing digital transformation, information security and enterprise management solutions.",
+    "Apatek Vietnam — công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số. Triển khai VTS, DMS, AIS cho cảng vụ, cơ quan hàng hải và doanh nghiệp Việt Nam.",
+  openGraph: {
+    description:
+      "Công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số. Triển khai VTS, DMS, AIS cho cảng vụ và doanh nghiệp Việt Nam.",
+  },
 };
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {

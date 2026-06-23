@@ -4,9 +4,13 @@ import Image from "next/image";
 import ContactCTA from "@/components/sections/ContactCTA";
 
 export const metadata: Metadata = {
-  title: "Clients",
+  title: "Khách hàng",
   description:
-    "Apatek Vietnam's featured clients: Viettel, Samsung, Ministry of Finance, Habeco, VNPAY, and many more.",
+    "Apatek Vietnam phục vụ hơn 50 khách hàng lớn: Viettel, Samsung, Bộ Tài chính, Habeco, VNPAY, các cảng vụ hàng hải và nhiều doanh nghiệp hàng đầu Việt Nam.",
+  openGraph: {
+    description:
+      "Phục vụ hơn 50 khách hàng lớn: Viettel, Samsung, Bộ Tài chính, Habeco, VNPAY, các cảng vụ hàng hải và nhiều doanh nghiệp hàng đầu.",
+  },
 };
 
 const GOV_CLIENTS = [

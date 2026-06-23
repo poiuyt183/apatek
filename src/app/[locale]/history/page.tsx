@@ -4,8 +4,8 @@ import { Rocket, TrendingUp, Building2, Bot } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "History",
-  description: "Apatek Vietnam company history from founding in 2019 to AI & Big Data adoption in 2025.",
+  title: "Lịch sử phát triển",
+  description: "Hành trình phát triển của Apatek Vietnam từ năm 2019 đến nay — từ nền tảng công nghệ đến hệ sinh thái giải pháp hàng hải và doanh nghiệp.",
 };
 
 const TIMELINE: { year: string; titleKey: string; bodyKey: string; Icon: LucideIcon }[] = [

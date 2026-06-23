@@ -4,9 +4,12 @@ import Image from "next/image";
 import ContactCTA from "@/components/sections/ContactCTA";
 
 export const metadata: Metadata = {
-  title: "Partners",
+  title: "Đối tác",
   description:
-    "Apatek Vietnam technology partners: IBM, HP, Cisco, Microsoft, Fortinet, JRC, and more.",
+    "Đối tác công nghệ của Apatek Vietnam: IBM, HP, Cisco, Microsoft, Fortinet, JRC và nhiều hãng công nghệ hàng đầu thế giới.",
+  openGraph: {
+    description: "Đối tác công nghệ của Apatek: IBM, HP, Cisco, Microsoft, Fortinet, JRC và nhiều hãng công nghệ hàng đầu.",
+  },
 };
 
 const GLOBAL_PARTNERS = ["IBM", "HP", "Sun Oracle", "Cisco", "Microsoft", "Lenovo", "Kaspersky"];

@@ -6,9 +6,13 @@ import type { LucideIcon } from "lucide-react";
 import ContactCTA from "@/components/sections/ContactCTA";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "Giới thiệu",
   description:
-    "Learn about Apatek Vietnam — our vision, mission, leadership, and journey as a pioneer technology company since 2019.",
+    "Apatek Vietnam — công ty công nghệ tiên phong trong lĩnh vực hàng hải và chuyển đổi số từ năm 2019. Tìm hiểu tầm nhìn, sứ mệnh và đội ngũ lãnh đạo của chúng tôi.",
+  openGraph: {
+    description:
+      "Công ty công nghệ tiên phong trong lĩnh vực hàng hải và chuyển đổi số từ năm 2019.",
+  },
 };
 
 const TIMELINE: { year: string; titleKey: string; bodyKey: string; Icon: LucideIcon }[] = [

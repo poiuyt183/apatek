@@ -7,9 +7,9 @@ import ContactCTA from "@/components/sections/ContactCTA";
 import { NEWS_ARTICLES, getNewsHref } from "@/data/news";
 
 export const metadata: Metadata = {
-  title: "News",
+  title: "Tin tức & Sự kiện",
   description:
-    "Latest news and updates from Apatek Vietnam — maritime technology, digital transformation, and enterprise solutions.",
+    "Tin tức mới nhất từ Apatek Vietnam — công nghệ hàng hải, chuyển đổi số và các giải pháp doanh nghiệp.",
 };
 
 export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {

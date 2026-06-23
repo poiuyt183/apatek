@@ -2,8 +2,8 @@ import { useTranslations } from "next-intl";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Team",
-  description: "Meet the leadership and technical specialists at Apatek Vietnam.",
+  title: "Đội ngũ",
+  description: "Đội ngũ lãnh đạo và chuyên gia kỹ thuật của Apatek Vietnam — những người kiến tạo các giải pháp công nghệ hàng hải và chuyển đổi số.",
 };
 
 const LEADERSHIP = [

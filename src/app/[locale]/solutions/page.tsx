@@ -9,9 +9,13 @@ import { SOLUTION_CATALOG, getCatalogHref } from "@/data/solutions";
 import { getListingAnchorId, getListingLabels } from "@/lib/solution-labels";
 
 export const metadata: Metadata = {
-  title: "Solutions",
+  title: "Giải pháp",
   description:
-    "Apatek Vietnam solutions: VTS, DMS, AIS dredging monitoring, and Security & System Integration.",
+    "Các giải pháp công nghệ của Apatek: VTS giám sát giao thông hàng hải, DMS quản lý kênh phân phối, AIS giám sát nạo vét và tích hợp hệ thống an ninh.",
+  openGraph: {
+    description:
+      "VTS giám sát giao thông hàng hải, DMS quản lý kênh phân phối, AIS giám sát nạo vét và tích hợp hệ thống an ninh.",
+  },
 };
 
 function SolutionCard({

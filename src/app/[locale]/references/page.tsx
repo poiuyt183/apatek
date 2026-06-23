@@ -6,8 +6,13 @@ import ContactCTA from "@/components/sections/ContactCTA";
 import { getSolutionHref } from "@/data/solutions";
 
 export const metadata: Metadata = {
-  title: "Client References",
-  description: "Real feedback from organisations that have deployed Apatek solutions.",
+  title: "Nhận xét khách hàng",
+  description:
+    "Phản hồi thực tế từ các cảng vụ, cơ quan hàng hải và doanh nghiệp đã triển khai thành công giải pháp Apatek Vietnam.",
+  openGraph: {
+    description:
+      "Phản hồi thực tế từ các cảng vụ và doanh nghiệp đã triển khai thành công giải pháp Apatek Vietnam.",
+  },
 };
 
 export default async function ReferencesPage({

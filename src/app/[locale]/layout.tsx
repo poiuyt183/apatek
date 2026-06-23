@@ -8,26 +8,57 @@ import "../globals.css";
 import Footer from "@/components/layout/Footer";
 import { bodyFont, displayFont } from "@/lib/fonts";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://apatek.com.vn";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     template: "%s | Apatek Vietnam",
-    default: "Apatek Vietnam — Pioneer Technology, Build the Future",
+    default: "Kiến tạo tương lai hàng hải — Apatek Vietnam",
   },
   description:
-    "Apatek Vietnam provides leading digital transformation solutions, information security, and enterprise operation optimization. Partner of Viettel, Samsung, Ministry of Finance.",
+    "Apatek Vietnam — công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số. Triển khai VTS, DMS, AIS cho cảng vụ và doanh nghiệp Việt Nam.",
   keywords: [
     "Apatek Vietnam",
-    "digital transformation",
-    "information security",
-    "DMS",
     "VTS",
-    "enterprise software",
-    "Vietnam tech company",
+    "DMS",
+    "AIS",
+    "hàng hải",
+    "maritime technology",
+    "chuyển đổi số",
+    "phần mềm doanh nghiệp",
+    "cảng vụ",
+    "vessel traffic services",
+    "distribution management",
   ],
   openGraph: {
+    title: {
+      template: "%s | Apatek Vietnam",
+      default: "Kiến tạo tương lai hàng hải — Apatek Vietnam",
+    },
+    description:
+      "Apatek Vietnam — công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số. Triển khai VTS, DMS, AIS cho cảng vụ và doanh nghiệp Việt Nam.",
     siteName: "Apatek Vietnam",
-    locale: "en_US",
+    locale: "vi_VN",
     type: "website",
+    images: [
+      {
+        url: "/logo_apatek.png",
+        width: 800,
+        height: 400,
+        alt: "Apatek Vietnam",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: {
+      template: "%s | Apatek Vietnam",
+      default: "Kiến tạo tương lai hàng hải — Apatek Vietnam",
+    },
+    description:
+      "Apatek Vietnam — công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số.",
+    images: ["/logo_apatek.png"],
   },
 };
 
