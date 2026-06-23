@@ -17,9 +17,13 @@ export const routing = defineRouting({
       en: "/vision",
       vi: "/tam-nhin",
     },
+    "/giai-phap": {
+      en: "/solutions",
+      vi: "/giai-phap",
+    },
     "/san-pham-dich-vu": {
-      en: "/products-services",
-      vi: "/san-pham-dich-vu",
+      en: "/solutions",
+      vi: "/giai-phap",
     },
     "/doi-ngu": {
       en: "/team",

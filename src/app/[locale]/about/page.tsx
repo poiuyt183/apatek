@@ -1,14 +1,14 @@
 import { useTranslations } from "next-intl";
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Rocket, TrendingUp, Building2, Bot } from "lucide-react";
+import { Rocket, TrendingUp, Building2, Bot, Lightbulb, Users, Zap, Trophy } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import ContactCTA from "@/components/sections/ContactCTA";
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Apatek Vietnam — pioneer technology company providing digital transformation, security, and enterprise optimization since 2019.",
+    "Learn about Apatek Vietnam — our vision, mission, leadership, and journey as a pioneer technology company since 2019.",
 };
 
 const TIMELINE: { year: string; titleKey: string; bodyKey: string; Icon: LucideIcon }[] = [
@@ -16,6 +16,13 @@ const TIMELINE: { year: string; titleKey: string; bodyKey: string; Icon: LucideI
   { year: "2020–2023", titleKey: "2020_title", bodyKey: "2020_body", Icon: TrendingUp },
   { year: "2024", titleKey: "2024_title", bodyKey: "2024_body", Icon: Building2 },
   { year: "2025", titleKey: "2025_title", bodyKey: "2025_body", Icon: Bot },
+];
+
+const CORE_VALUES: { numKey: string; titleKey: string; bodyKey: string; Icon: LucideIcon }[] = [
+  { numKey: "01", titleKey: "value1_title", bodyKey: "value1_body", Icon: Lightbulb },
+  { numKey: "02", titleKey: "value2_title", bodyKey: "value2_body", Icon: Users },
+  { numKey: "03", titleKey: "value3_title", bodyKey: "value3_body", Icon: Zap },
+  { numKey: "04", titleKey: "value4_title", bodyKey: "value4_body", Icon: Trophy },
 ];
 
 const LEADERSHIP = [
@@ -29,9 +36,11 @@ type TeamMemberKey = "quan" | "dung" | "hoa" | "cu";
 
 export default function AboutPage() {
   const t = useTranslations("about");
+  const tv = useTranslations("vision");
   const th = useTranslations("history");
   const tt = useTranslations("team");
   const tn = useTranslations("nav");
+  const tf = useTranslations("footer");
 
   const getMember = (key: TeamMemberKey) => ({
     name: tt(`members.${key}.name`),
@@ -48,7 +57,6 @@ export default function AboutPage() {
 
   return (
     <div className="about-page">
-      {/* Split hero — same language as homepage */}
       <section className="about-hero">
         <div className="about-hero-left">
           <span className="section-label">{t("section_label")}</span>
@@ -68,7 +76,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Intro + quick facts */}
       <section className="section">
         <div className="container">
           <div className="about-intro-grid">
@@ -78,7 +85,7 @@ export default function AboutPage() {
             <div>
               <div className="divider-orange" />
               <p className="about-body-text" style={{ color: "var(--color-text)" }}>
-                {t("director_body")}
+                {t("director_quote")}
               </p>
             </div>
           </div>
@@ -94,7 +101,54 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Director message */}
+      <section className="section section-light" id="vision-mission">
+        <div className="container">
+          <div className="about-section-header">
+            <span className="section-label">{tv("section_label")}</span>
+            <h2 className="section-title">{tv("title")}</h2>
+          </div>
+
+          <div className="vision-vm-grid">
+            <div className="vision-vm-panel vision-vm-vision">
+              <span className="vision-vm-label">{tv("vision_label")}</span>
+              <p className="vision-vm-text">{tv("vision_body")}</p>
+            </div>
+            <div className="vision-vm-panel vision-vm-mission">
+              <span className="vision-vm-label">{tv("mission_label")}</span>
+              <p className="vision-vm-text">{tv("mission_body")}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="about-section-header">
+            <span className="section-label">{tv("values_section_label")}</span>
+            <h2 className="section-title">{tv("values_title")}</h2>
+          </div>
+
+          <div className="vision-values-grid">
+            {CORE_VALUES.map((v) => (
+              <div key={v.numKey} className="vision-value-card" id={`value-${v.numKey}`}>
+                <div className="vision-value-icon">
+                  <v.Icon size={20} color="var(--color-primary)" strokeWidth={1.5} />
+                </div>
+                <span className="vision-value-num">{v.numKey}</span>
+                <h3 className="vision-value-title">{tv(v.titleKey as "value1_title")}</h3>
+                <p className="vision-value-body">{tv(v.bodyKey as "value1_body")}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="vision-slogan">
+        <div className="container">
+          <p className="vision-slogan-text">&ldquo;{tf("slogan")}&rdquo;</p>
+        </div>
+      </section>
+
       <section className="about-director-section">
         <div className="container">
           <div className="about-section-header">
@@ -125,7 +179,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* History timeline */}
       <section className="section">
         <div className="container">
           <div className="about-section-header">
@@ -156,7 +209,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership */}
       <section className="section section-light">
         <div className="container">
           <div className="about-section-header">

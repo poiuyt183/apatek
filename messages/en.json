@@ -4,19 +4,19 @@
     "about": "About Us",
     "history": "History",
     "vision": "Vision & Mission",
-    "products": "Products & Services",
     "team": "Our Team",
     "partners": "Partners",
     "clients": "Clients",
     "news": "News & Events",
     "careers": "Careers",
     "contact": "Contact",
-    "vts": "VTS"
+    "vts": "VTS",
+    "solutions": "Solutions"
   },
   "hero": {
     "badge": "Pioneer Technology Company",
     "title": "Pioneer Technology",
-    "titleHighlight": "Build the Future.",
+    "titleHighlight": "Shaping the Future of Maritime",
     "subtitle": "Apatek Vietnam provides leading digital transformation solutions, information security, and enterprise optimization for businesses across Vietnam and the world.",
     "cta_primary": "Explore Our Services",
     "cta_secondary": "Contact Us",
@@ -35,8 +35,7 @@
     "director_title": "Message from the Director",
     "director_name": "Nguyen Hong Quan",
     "director_role": "Director — 16 Years of Experience",
-    "director_quote": "\"Technology Pioneer — Build the Future.\" Apatek is committed to bringing high-quality products and services, meeting the diverse needs of businesses in the digital age.",
-    "director_body": "With a motto of putting customers at the center, our team of experienced experts is always ready to accompany clients on their digital transformation journey, building sustainable competitive advantages.",
+    "director_quote": "Shaping the future of maritime. We develop advanced technology solutions to enhance situational awareness, optimize operations, and support decision-making — contributing to a safer, smarter, and more sustainable maritime environment.",
     "founded_year": "Founded",
     "founded_value": "2019",
     "hq_label": "Headquarters",
@@ -59,13 +58,9 @@
     "title": "Vision & Mission",
     "section_label": "OUR PURPOSE",
     "vision_label": "VISION",
-    "vision_body": "To become Vietnam's leading technology company, pioneering in the technology sector, helping businesses break through and develop sustainably.",
+    "vision_body": "Build a safer, smarter, and more sustainable maritime future through innovation and advanced technology.",
     "mission_label": "MISSION",
-    "mission_items": [
-      "Bring technology into every aspect of the business, helping to optimize operations.",
-      "Provide flexible technology solutions, helping businesses easily access and implement.",
-      "Accompany customers on their digital transformation journey, enhancing experience and performance."
-    ],
+    "mission_body": "Deliver innovative solutions that help the maritime industry operate more safely, intelligently, and efficiently.",
     "values_title": "Core Values",
     "values_section_label": "WHAT DRIVES US",
     "value1_title": "Innovation",
@@ -84,15 +79,38 @@
     "p1_title": "Distribution Channel Management",
     "p1_body": "Distribution Channel Management (DMS) solution — Applied for the FMCG industry, helping optimize the supply chain.",
     "p1_tag": "DMS / FMCG",
+    "p1_features": [
+      "Supply chain optimization",
+      "Real-time channel tracking",
+      "FMCG industry focus",
+      "Sales force automation"
+    ],
     "p2_title": "Monitoring dredging operations using AIS.",
     "p2_body": "Dredging operations monitoring solution using AIS technology - Tracks dredging vessels, dredging equipment and maritime channel maintenance. Provides real-time data to optimize management and ensure maritime safety.",
     "p2_tag": "MARITIME / NODGING",
+    "p2_features": [
+      "Real-time dredging activity monitoring",
+      "Dredging and disposal area control",
+      "Material transport cycle tracking",
+      "Compliance alerts and reporting"
+    ],
     "p3_title": "Security & System Integration",
     "p3_body": "Security, information safety, and system integration solutions for enterprises. Video conferencing & security surveillance systems.",
     "p3_tag": "SECURITY / ICT",
+    "p3_features": [
+      "Sophos security solutions",
+      "Video conferencing systems",
+      "Security surveillance",
+      "System integration"
+    ],
     "p4_title": "Maritime Traffic Monitoring (VTS)",
     "p4_body": "Vessel Traffic Service (VTS) monitoring and coordination solution — Applied for Vietnam Maritime Administration and local Port Authorities.",
-    "p4_tag": "MARITIME / VTS"
+    "p4_tag": "MARITIME / VTS",
+    "p4_features": [
+      "Maritime traffic monitoring",
+      "Real-time vessel tracking",
+      "Port authority integration"
+    ]
   },
   "team": {
     "title": "Our Team",
@@ -287,7 +305,7 @@
     "cta_label": "Let's Work Together"
   },
   "footer": {
-    "slogan": "Pioneer Technology — Build the Future.",
+    "slogan": "Shaping the Future of Maritime",
     "quick_links": "Quick Links",
     "contact_info": "Contact Info",
     "copyright": "© 2025 Apatek Vietnam Joint Stock Company. All rights reserved.",
@@ -351,6 +369,216 @@
     "learn_more": "Learn More",
     "view_all": "View All",
     "back": "Back",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "view_all_references": "View all references"
+  },
+  "references": {
+    "title": "Client References",
+    "section_label": "CLIENTS",
+    "description": "Real feedback from organisations that have deployed Apatek solutions.",
+    "all_label": "ALL REFERENCES",
+    "ais_label": "AIS SOLUTION",
+    "dms_label": "DMS SOLUTION",
+    "cta_label": "CLIENTS",
+    "cta_title": "Trusted by leading organisations",
+    "cta_body": "Over 13 organisations and businesses have successfully deployed Apatek solutions and shared their real-world results.",
+    "cta_button": "View all references"
+  },
+  "solutions": {
+    "title": "Solutions",
+    "section_label": "OUR SOLUTIONS",
+    "description": "Specialized technology solutions that help maritime and enterprise operations run safer, smarter, and more efficiently.",
+    "items": {
+      "vts": {
+        "tag": "MARITIME / VTS",
+        "title": "Vessel Traffic Services (VTS)",
+        "subtitle": "An IALA-compliant vessel traffic management platform — deployed for Vietnamese port authorities and maritime agencies",
+        "intro1": "Vessel traffic management leaves no room for guesswork. Whether it's a port authority managing a busy harbour or a maritime agency overseeing coastal waterways, every organisation needs real-time awareness of every vessel, every movement, and every potential risk.",
+        "intro2": "Apatek's VTS solution is built on advanced maritime technology, fully IALA-compliant — delivering the operational clarity needed to keep waterways safe, operators confident, and systems continuously aligned with regulatory requirements.",
+        "intro3": "Apatek delivers VTS across two distinct deployment paths, each tailored to the specific operational needs of its users.",
+        "tagline1": "Built to deal with complexity.",
+        "tagline2": "Delivered with complete clarity.",
+
+        "ports_label": "VTS FOR PORTS",
+        "ports_title": "Port vessel traffic management",
+        "ports_intro": "Port authorities need to accurately track every vessel entering and leaving the port — from large cargo ships to high-speed ferries — while ensuring compliance with maritime safety regulations in a high-density environment. Apatek's VTS for Ports fuses radar, AIS, and CCTV into a single operational picture, enabling efficient vessel coordination and minimising collision risk.",
+        "ports_feature1_title": "Real-time vessel tracking",
+        "ports_feature1_body": "Monitor every vessel in your port with live AIS and radar data fused into a single, unified display. No blind spots, no lag.",
+        "ports_feature2_title": "Report-ready data",
+        "ports_feature2_body": "Data is organised and ready for export, so you can generate the reports you need to steer decisions and track maritime operations efficiently.",
+        "ports_feature3_title": "Configurable alerts & geofencing",
+        "ports_feature3_body": "Set custom boundaries and thresholds — speed violations, course deviations, and zone breaches trigger instant operator alerts.",
+        "ports_feature4_title": "Compliance-ready reporting",
+        "ports_feature4_body": "Generate SOLAS, IMO FAL, and port state control reports automatically, with one-click export for audits and inspections.",
+
+        "maritime_label": "VTS FOR MARITIME AUTHORITIES",
+        "maritime_title": "Coastal and inland waterway traffic management",
+        "maritime_intro": "Maritime authorities managing broad coastal zones need situational awareness in depth — not just position tracking, but the ability to anticipate traffic developments and support timely decisions. Apatek's VTS for Maritime Authorities provides comprehensive analysis capabilities, automated traffic sequencing, and compliance tools aligned with international maritime standards.",
+        "maritime_feature1_title": "Real-time traffic awareness",
+        "maritime_feature1_body": "Maintain full situational awareness of all vessel movements within your VTS area, with AIS, radar, and sensor data integrated into a single operational view.",
+        "maritime_feature2_title": "Intelligent traffic management",
+        "maritime_feature2_body": "Enhance navigational safety and efficiency through automated traffic sequencing, factoring in vessel priority, environmental conditions, and traffic density.",
+        "maritime_feature3_title": "Coastal surveillance",
+        "maritime_feature3_body": "Configure dynamic safety zones and operational thresholds. Instantly detect and respond to speed violations, course deviations, and unauthorized zone incursions.",
+        "maritime_feature4_title": "Regulatory reporting & compliance",
+        "maritime_feature4_body": "Automatically generate reports aligned with international maritime regulations, supporting compliance, audits, and incident investigations to IMO and IALA standards.",
+
+        "benefits_label": "BENEFITS",
+        "benefits_title": "Why choose Apatek VTS",
+        "benefit1_title": "Reliable",
+        "benefit1_body": "High-grade vessel tracking and alerting for all vessel types — from small craft to large ships and high-speed ferries — operating reliably under all conditions.",
+        "benefit2_title": "Scalable",
+        "benefit2_body": "An exact fit for any port or waterway today, with the architecture to grow as your operational needs evolve.",
+        "benefit3_title": "Cyber secure",
+        "benefit3_body": "Security specialists involved at every step of development and deployment, ensuring the system meets the highest maritime security standards.",
+        "benefit4_title": "Easy to use",
+        "benefit4_body": "Developed together with VTSOs to deliver an intuitive interface that gets operators up and running fast and working effectively from day one.",
+        "closing_title": "Superior situational awareness for safer waterways",
+        "closing_body": "When every vessel movement, every maritime event, and every compliance requirement is managed on one unified platform, port authorities and maritime agencies gain the ability to operate on real data rather than fragmented information. This strengthens maritime safety, improves operational efficiency, and supports timely, accurate decision-making.",
+        "testimonials": []
+      },
+      "ais-dredging": {
+        "tag": "MARITIME / DREDGING",
+        "title": "AIS Dredging Monitoring Solution",
+        "subtitle": "A dredging operations monitoring platform that enhances situational awareness and supports accurate decision-making",
+        "intro1": "Dredging operations require transparency, continuous control, and independent verification. When construction volumes are large, multiple vessels are involved, and monitoring areas are widespread, traditional tracking methods often fail to meet modern management requirements.",
+        "intro2": "The AIS Dredging Monitoring System is designed to provide comprehensive situational awareness of dredgers, transport barges, and support vessels. By integrating real-time AIS data, digital maps, and specialized monitoring zones, the system helps authorities accurately track all activities within project areas, detect anomalies early, and support fast, accurate decisions.",
+        "intro3": "Built as an open platform, the solution scales flexibly with project size, management requirements, and evolving industry regulations — delivering a centralized, transparent, and efficient monitoring environment that strengthens management capacity, reduces risk, and ensures compliance throughout dredging operations.",
+        "tagline1": "Designed to handle complexity.",
+        "tagline2": "Deployed with simplicity.",
+        "section1": "The solution provides real-time monitoring of all dredging activities, turning voyage data into actionable management intelligence. Smart alerts and an intuitive interface help operators quickly detect abnormal events, assess impact, and take necessary action.",
+        "section2": "With a user-centric approach, the system shortens onboarding time, improves operational efficiency, and maintains high control over all field construction activities.",
+        "features_label": "AIS DREDGING MONITORING",
+        "features_title": "What you get",
+        "feature1_title": "Real-time activity monitoring",
+        "feature1_body": "Continuously track position, heading, speed, and operational status of dredgers and related vessels on a unified interface.",
+        "feature2_title": "Dredging and disposal zone control",
+        "feature2_body": "Configure geofences to monitor permitted work areas, disposal zones, and restricted areas. The system automatically detects out-of-bounds activity.",
+        "feature3_title": "Material transport cycle management",
+        "feature3_body": "Track the full cycle from dredging areas to disposal or stockpile sites, supporting volume assessment and extraction efficiency.",
+        "feature4_title": "Alerts and compliance",
+        "feature4_body": "Automatically detect abnormal stops, inappropriate route changes, off-hours activity, or entry into restricted zones.",
+        "feature5_title": "Reporting and historical traceability",
+        "feature5_body": "Store complete voyage, event, and vessel activity data for inspection, acceptance, and construction volume reconciliation.",
+        "benefits_label": "BENEFITS",
+        "benefits_title": "Key benefits",
+        "benefit1_title": "Reliability",
+        "benefit1_body": "Continuous, accurate monitoring based on real-time AIS data, reducing reliance on manual reports and increasing project transparency.",
+        "benefit2_title": "Scalability",
+        "benefit2_body": "Easily expand monitoring scope, add project areas, vessels, or new data sources as management needs evolve.",
+        "benefit3_title": "Security",
+        "benefit3_body": "Centrally managed data with role-based access and security suitable for government agencies, investors, and supervision consultants.",
+        "benefit4_title": "Ease of use",
+        "benefit4_body": "An intuitive interface focused on field monitoring workflows, enabling users to quickly adopt and operate the system effectively.",
+        "testimonials_label": "CLIENTS",
+        "testimonials_title": "Feedback from Port Authorities",
+        "testimonials": [
+          {
+            "client": "Dong Nai Port Authority",
+            "quote": "Apatek demonstrated outstanding capability in integrating maritime monitoring systems on a unified platform, improving management efficiency and data utilization for operations."
+          },
+          {
+            "client": "Cua Lo Port Authority",
+            "quote": "We highly value Apatek's professionalism throughout project implementation — from survey and design to operation and post-handover technical support."
+          },
+          {
+            "client": "Quang Ngai Port Authority",
+            "quote": "The solution deployed by Apatek meets operational requirements well, ensuring stability, reliability, and effectiveness in maritime monitoring."
+          },
+          {
+            "client": "Can Tho Port Authority",
+            "quote": "Apatek proved its ability to integrate and deploy complex maritime technology systems, contributing to stronger monitoring and waterway traffic management in the region."
+          },
+          {
+            "client": "An Giang Port Authority",
+            "quote": "The Apatek team is proactive, responsible, and supportive throughout system operation, ensuring continuous and effective performance."
+          },
+          {
+            "client": "Hai Phong Port Authority",
+            "quote": "Apatek meets technical requirements for large-scale systems while demonstrating structured, professional project deployment and management."
+          },
+          {
+            "client": "Ho Chi Minh City Port Authority",
+            "quote": "With solid experience and expertise, Apatek successfully deployed maritime monitoring solutions that deliver practical results for management and operations."
+          }
+        ],
+        "closing_title": "One unified data source for all stakeholders",
+        "closing_body": "A centralized, trusted data source enables authorities, investors, and contractors to work from the same operational picture. All information is updated in real time, improving coordination, transparency, and data-driven decision-making.",
+        "closing_extra": ""
+      },
+      "dms": {
+        "tag": "DMS / FMCG",
+        "title": "Distribution Management System (DMS)",
+        "subtitle": "A comprehensive distribution channel management platform for modern enterprises",
+        "intro1": "In an increasingly competitive market, businesses need tight control over distribution from manufacturers to distributors, agents, retail outlets, and end consumers. However, fragmented data, poor connectivity, and slow updates often lead to inventory loss of control, opaque sales figures, and difficulty evaluating market performance.",
+        "intro2": "Distribution Management System (DMS) digitizes the entire sales and distribution process, helping enterprises build a unified, transparent, and efficient operating ecosystem. The system provides real-time business monitoring, connecting manufacturers, distributors, sales teams, and retail points on one centralized data platform.",
+        "intro3": "Through process automation, data standardization, and intelligent analytics tools, DMS helps enterprises strengthen governance, optimize operational performance, and drive sustainable growth across the entire distribution network.",
+        "tagline1": "Built to manage complex distribution networks.",
+        "tagline2": "Deployed to drive business growth.",
+        "section1": "DMS transforms traditional management into real-time, data-driven operations. Everything from ordering, inventory management, market monitoring, sales force management to promotion execution is digitized and connected on one unified platform.",
+        "section2": "As a result, enterprises can quickly grasp business conditions, optimize resources, and make more accurate decisions at every management level.",
+        "features_label": "SMART DISTRIBUTION MANAGEMENT",
+        "features_title": "What you get",
+        "feature1_title": "Distributor and outlet management",
+        "feature1_body": "Centrally manage distributors, agents, stores, and outlets nationwide. Track performance, sales, and market coverage for each unit in the network.",
+        "feature2_title": "End-to-end order management",
+        "feature2_body": "Digitize the full process from order creation, approval, delivery, reconciliation to transaction completion. Reduce manual errors and shorten order processing time.",
+        "feature3_title": "Real-time inventory control",
+        "feature3_body": "Track inventory at factories, central warehouses, distributors, and outlets. Support demand forecasting and optimize goods flow to reduce holding costs and stockouts.",
+        "feature4_title": "Sales Force Automation",
+        "feature4_body": "Support sales teams with route planning, visit scheduling, order capture, display checks, and market data updates on mobile devices.",
+        "feature5_title": "Promotion and sales policy management",
+        "feature5_body": "Configure, deploy, and monitor promotions, pricing policies, discounts, and trade support programs across the distribution system.",
+        "feature6_title": "Analytics and executive reporting",
+        "feature6_body": "Multi-dimensional reporting on sales, inventory, market coverage, sales performance, and distributor effectiveness to support fast, accurate leadership decisions.",
+        "benefits_label": "BENEFITS",
+        "benefits_title": "Key benefits",
+        "benefit1_title": "Greater market control",
+        "benefit1_body": "Track sales and distribution in real time, strengthening management capacity and enabling rapid response to market changes.",
+        "benefit2_title": "Higher sales efficiency",
+        "benefit2_body": "Help sales teams work more effectively through process automation, less manual processing, and more customer-facing time.",
+        "benefit3_title": "Optimized inventory and supply chain",
+        "benefit3_body": "Improve demand forecasting, optimize goods flow, and reduce operating costs across the distribution chain.",
+        "benefit4_title": "Business data transparency",
+        "benefit4_body": "Build a centralized, consistent, and reliable data source for every management level, from field sales to executive leadership.",
+        "benefit5_title": "Revenue growth",
+        "benefit5_body": "Increase market coverage, improve customer service quality, and enhance execution of sales strategies.",
+        "benefit6_title": "Digital transformation ready",
+        "benefit6_body": "Easily integrate with ERP, CRM, BI, accounting, warehousing, and other enterprise systems to form a comprehensive digital management platform.",
+        "testimonials_label": "CLIENTS",
+        "testimonials_title": "What our clients say",
+        "testimonials": [
+          {
+            "client": "Menvodka",
+            "author": "Mr. Pham Kinh Kha — Chairman of Menvodka",
+            "quote": "Apatek digs deep to understand the problems and challenges of our business, then develops solutions to bring us to success. Thanks to Apatek's solutions, we have resolved increasingly complex issues to operate more effectively. Flexibility, creativity, and dedication are the hallmarks of the Apatek team."
+          },
+          {
+            "client": "Habeco",
+            "author": "Mr. Nguyen Dang Toan — Director, Habeco Trading Co., Ltd.",
+            "quote": "Choosing Apatek as the operating partner to support the DMS, PG system was the right decision for Habeco. With a long-term partnership mindset, Apatek has helped Habeco improve operations, deploy scalable solutions, and effectively leverage the DMS, PG system."
+          },
+          {
+            "client": "VICOSTONE",
+            "quote": "Apatek is a trusted technology partner, always supporting us in optimizing operations and improving system utilization efficiency."
+          },
+          {
+            "client": "PHENIKAA",
+            "quote": "We highly appreciate Apatek's deployment capability, professionalism, and quick responsiveness."
+          },
+          {
+            "client": "Moc Chau Milk",
+            "quote": "The solution deployed by Apatek has contributed to improved distribution channel management and business operations."
+          },
+          {
+            "client": "Ba Vi Milk",
+            "quote": "Apatek proactively supports, continuously improves the system, and accompanies us throughout our development journey."
+          }
+        ],
+        "closing_title": "One data source for the entire distribution ecosystem",
+        "closing_body": "When all sales, distribution, and market activities are managed on one unified platform, enterprises gain the ability to operate on real data instead of fragmented reports — strengthening cross-department coordination, improving decision quality, and building a foundation for long-term growth.",
+        "closing_extra": "DMS is not only a distribution management solution but also a digital transformation platform that helps enterprises build a modern, transparent, and scalable sales network for the future."
+      }
+    }
   }
 }

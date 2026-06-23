@@ -4,19 +4,19 @@
     "about": "Giới Thiệu",
     "history": "Lịch Sử",
     "vision": "Tầm Nhìn & Sứ Mệnh",
-    "products": "Sản Phẩm & Dịch Vụ",
     "team": "Đội Ngũ",
     "partners": "Đối Tác",
     "clients": "Khách Hàng",
     "news": "Tin Tức",
     "careers": "Tuyển Dụng",
     "contact": "Liên Hệ",
-    "vts": "VTS"
+    "vts": "VTS",
+    "solutions": "Giải Pháp"
   },
   "hero": {
     "badge": "Công Ty Công Nghệ Tiên Phong",
-    "title": "Công Nghệ Tiên Phong –",
-    "titleHighlight": "Kiến Tạo Tương Lai.",
+    "title": "Tiên phong công nghệ",
+    "titleHighlight": "Kiến Tạo Tương Lai Hàng Hải",
     "subtitle": "Apatek Việt Nam cung cấp các giải pháp chuyển đổi số hàng đầu, bảo mật thông tin và tối ưu vận hành doanh nghiệp cho các doanh nghiệp tại Việt Nam và trên thế giới.",
     "cta_primary": "Khám Phá Dịch Vụ",
     "cta_secondary": "Liên Hệ Ngay",
@@ -35,8 +35,7 @@
     "director_title": "Lời Chào Từ Giám Đốc",
     "director_name": "Nguyễn Hồng Quân",
     "director_role": "Giám Đốc — 16 Năm Kinh Nghiệm",
-    "director_quote": "\"Công nghệ tiên phong – Kiến tạo tương lai.\" Apatek cam kết mang đến những sản phẩm và dịch vụ chất lượng cao, đáp ứng nhu cầu đa dạng của doanh nghiệp trong thời đại số.",
-    "director_body": "Với phương châm đặt khách hàng làm trung tâm, đội ngũ chuyên gia giàu kinh nghiệm của chúng tôi luôn sẵn sàng đồng hành cùng Quý khách hàng trên hành trình chuyển đổi số, tạo dựng lợi thế cạnh tranh bền vững.",
+    "director_quote": "Kiến tạo tương lai hàng hải. Chúng tôi phát triển các giải pháp công nghệ tiên tiến nhằm nâng cao nhận thức tình huống, tối ưu vận hành và hỗ trợ ra quyết định, góp phần xây dựng một môi trường hàng hải an toàn, thông minh và bền vững.",
     "founded_year": "Năm Thành Lập",
     "founded_value": "2019",
     "hq_label": "Trụ Sở",
@@ -59,13 +58,9 @@
     "title": "Tầm Nhìn & Sứ Mệnh",
     "section_label": "MỤC ĐÍCH CỦA CHÚNG TÔI",
     "vision_label": "TẦM NHÌN",
-    "vision_body": "Trở thành công ty công nghệ hàng đầu Việt Nam, tiên phong trong lĩnh vực công nghệ, giúp doanh nghiệp bứt phá và phát triển bền vững.",
+    "vision_body": "Kiến tạo một tương lai hàng hải an toàn hơn, thông minh hơn và bền vững hơn thông qua đổi mới sáng tạo và công nghệ tiên tiến.",
     "mission_label": "SỨ MỆNH",
-    "mission_items": [
-      "Đưa công nghệ vào mọi khía cạnh của doanh nghiệp, giúp tối ưu vận hành.",
-      "Cung cấp giải pháp công nghệ linh hoạt, giúp doanh nghiệp dễ dàng tiếp cận và triển khai.",
-      "Đồng hành cùng khách hàng trên hành trình chuyển đổi số, nâng cao trải nghiệm và hiệu suất."
-    ],
+    "mission_body": "Mang đến những giải pháp đổi mới sáng tạo giúp ngành hàng hải vận hành an toàn hơn, thông minh hơn và hiệu quả hơn.",
     "values_title": "Giá Trị Cốt Lõi",
     "values_section_label": "ĐỘNG LỰC CỦA CHÚNG TÔI",
     "value1_title": "Đổi Mới Sáng Tạo",
@@ -84,15 +79,38 @@
     "p1_title": "Quản Lý Kênh Phân Phối",
     "p1_body": "Giải pháp quản lý kênh phân phối (DMS) – Ứng dụng cho ngành FMCG, giúp tối ưu chuỗi cung ứng.",
     "p1_tag": "DMS / FMCG",
+    "p1_features": [
+      "Tối ưu chuỗi cung ứng",
+      "Theo dõi kênh phân phối thời gian thực",
+      "Ứng dụng cho ngành FMCG",
+      "Tự động hóa lực lượng bán hàng"
+    ],
     "p2_title": "Giám sát nạo vét bằng AIS",
     "p2_body": "Giải pháp giám sát hoạt động khoét sâu sử dụng công nghệ AIS - Theo dõi tàu khoét sâu, thiết bị nạo vét và bảo trì lạch hàng hải. Cung cấp dữ liệu thời gian thực giúp tối ưu quản lý và đảm bảo an toàn hàng hải.",
     "p2_tag": "HÀNG HẢI / NẠO VÉT",
+    "p2_features": [
+      "Giám sát hoạt động nạo vét thời gian thực",
+      "Kiểm soát khu vực nạo vét và đổ thải",
+      "Theo dõi chu trình vận chuyển vật liệu",
+      "Cảnh báo tuân thủ và báo cáo"
+    ],
     "p3_title": "Bảo Mật & Tích Hợp Hệ Thống",
     "p3_body": "Giải pháp bảo mật, an toàn thông tin, tích hợp hệ thống cho doanh nghiệp. Hệ thống hội nghị truyền hình & giám sát an ninh.",
     "p3_tag": "BẢO MẬT / ICT",
+    "p3_features": [
+      "Giải pháp bảo mật Sophos",
+      "Hệ thống hội nghị truyền hình",
+      "Giám sát an ninh",
+      "Tích hợp hệ thống"
+    ],
     "p4_title": "Giám Sát Giao Thông Hàng Hải (VTS)",
     "p4_body": "Giải pháp giám sát và điều phối giao thông Hàng Hải (VTS) - Ứng dụng cho Cục Hàng Hải và các Cảng vụ Hàng Hải.",
-    "p4_tag": "HÀNG HẢI / VTS"
+    "p4_tag": "HÀNG HẢI / VTS",
+    "p4_features": [
+      "Giám sát giao thông hàng hải",
+      "Theo dõi tàu thời gian thực",
+      "Tích hợp cơ quan cảng vụ"
+    ]
   },
   "team": {
     "title": "Đội Ngũ Nhân Sự",
@@ -287,7 +305,7 @@
     "cta_label": "Hợp Tác Cùng Chúng Tôi"
   },
   "footer": {
-    "slogan": "Công Nghệ Tiên Phong – Kiến Tạo Tương Lai.",
+    "slogan": "Kiến tạo tương lai hàng hải",
     "quick_links": "Liên Kết Nhanh",
     "contact_info": "Thông Tin Liên Hệ",
     "copyright": "© 2025 Công ty Cổ phần Apatek Việt Nam. Bảo lưu mọi quyền.",
@@ -351,6 +369,216 @@
     "learn_more": "Tìm Hiểu Thêm",
     "view_all": "Xem Tất Cả",
     "back": "Quay Lại",
-    "loading": "Đang Tải..."
+    "loading": "Đang Tải...",
+    "view_all_references": "Xem tất cả nhận xét"
+  },
+  "references": {
+    "title": "Nhận xét khách hàng",
+    "section_label": "KHÁCH HÀNG",
+    "description": "Những phản hồi thực tế từ các khách hàng đã triển khai giải pháp của Apatek.",
+    "all_label": "TẤT CẢ NHẬN XÉT",
+    "ais_label": "GIẢI PHÁP AIS",
+    "dms_label": "GIẢI PHÁP DMS",
+    "cta_label": "KHÁCH HÀNG",
+    "cta_title": "Doanh nghiệp tin tưởng chúng tôi",
+    "cta_body": "Hơn 13 tổ chức, doanh nghiệp đã triển khai thành công giải pháp Apatek và chia sẻ kết quả thực tế.",
+    "cta_button": "Xem tất cả nhận xét"
+  },
+  "solutions": {
+    "title": "Giải Pháp",
+    "section_label": "GIẢI PHÁP CỦA CHÚNG TÔI",
+    "description": "Các giải pháp công nghệ chuyên sâu giúp ngành hàng hải và doanh nghiệp vận hành an toàn, thông minh và hiệu quả hơn.",
+    "items": {
+      "vts": {
+        "tag": "HÀNG HẢI / VTS",
+        "title": "Vessel Traffic Services (VTS)",
+        "subtitle": "Nền tảng giám sát giao thông hàng hải chuẩn IALA — triển khai cho cảng vụ và cơ quan hàng hải Việt Nam",
+        "intro1": "Quản lý giao thông hàng hải không có chỗ cho sự phỏng đoán. Dù là cảng nội địa hay cơ quan hàng hải quản lý tuyến ven biển, mỗi đơn vị đều cần nhận thức tức thời về từng con tàu, từng chuyển động và từng rủi ro tiềm ẩn.",
+        "intro2": "Giải pháp VTS của Apatek được phát triển dựa trên công nghệ hàng hải tiên tiến, tuân thủ chuẩn IALA — mang lại sự rõ ràng vận hành để giữ vùng nước an toàn, người vận hành tự tin và hệ thống luôn cập nhật theo yêu cầu pháp lý.",
+        "intro3": "Apatek cung cấp VTS theo hai hướng triển khai riêng biệt, phù hợp với đặc thù nghiệp vụ của từng đối tượng.",
+        "tagline1": "Được xây dựng để xử lý độ phức tạp.",
+        "tagline2": "Được triển khai với sự rõ ràng tuyệt đối.",
+
+        "ports_label": "VTS CHO CẢNG VỤ",
+        "ports_title": "Quản lý giao thông tàu thuyền tại cảng",
+        "ports_intro": "Các cảng vụ cần theo dõi chính xác mọi tàu ra vào cảng — từ tàu hàng lớn đến phà tốc hành — đồng thời đảm bảo tuân thủ các quy định an toàn hàng hải trong môi trường mật độ cao. Giải pháp VTS cho cảng vụ của Apatek hợp nhất radar, AIS và CCTV thành một bức tranh vận hành duy nhất, giúp điều phối tàu thuyền hiệu quả và giảm thiểu rủi ro va chạm.",
+        "ports_feature1_title": "Theo dõi tàu thời gian thực",
+        "ports_feature1_body": "Giám sát toàn bộ tàu thuyền trong vùng cảng với dữ liệu AIS và radar được hợp nhất thành một màn hình duy nhất. Không điểm mù, không độ trễ.",
+        "ports_feature2_title": "Dữ liệu sẵn sàng báo cáo",
+        "ports_feature2_body": "Dữ liệu được tổ chức và sẵn sàng xuất báo cáo, hỗ trợ ra quyết định và theo dõi hoạt động hàng hải hiệu quả, nhanh chóng.",
+        "ports_feature3_title": "Cảnh báo cấu hình & Geofencing",
+        "ports_feature3_body": "Thiết lập vùng ranh giới và ngưỡng tùy chỉnh — vi phạm tốc độ, lệch hướng, xâm nhập khu vực — kích hoạt cảnh báo tức thời đến người vận hành.",
+        "ports_feature4_title": "Báo cáo tuân thủ tự động",
+        "ports_feature4_body": "Tự động tạo báo cáo SOLAS, IMO FAL và kiểm soát nhà nước cảng với xuất dữ liệu một thao tác, phục vụ kiểm toán và thanh tra.",
+
+        "maritime_label": "VTS CHO CƠ QUAN HÀNG HẢI",
+        "maritime_title": "Quản lý giao thông tuyến ven biển và đường thủy",
+        "maritime_intro": "Các cơ quan hàng hải quản lý vùng biển rộng lớn cần nhận thức tình huống theo chiều sâu, không chỉ giám sát vị trí mà còn dự báo diễn biến giao thông và hỗ trợ ra quyết định kịp thời. Giải pháp VTS cho cơ quan hàng hải của Apatek cung cấp khả năng phân tích toàn diện, tự động hóa điều phối và công cụ đánh giá tuân thủ theo tiêu chuẩn quốc tế.",
+        "maritime_feature1_title": "Nhận thức giao thông thời gian thực",
+        "maritime_feature1_body": "Duy trì bức tranh tình huống đầy đủ về mọi chuyển động tàu thuyền trong vùng VTS với AIS, radar và cảm biến được tích hợp vào một góc nhìn vận hành duy nhất.",
+        "maritime_feature2_title": "Quản lý giao thông thông minh",
+        "maritime_feature2_body": "Nâng cao an toàn và hiệu quả hàng hải thông qua tự động hóa điều phối luồng giao thông, tính đến ưu tiên tàu, điều kiện môi trường và mật độ lưu thông.",
+        "maritime_feature3_title": "Giám sát vùng ven biển",
+        "maritime_feature3_body": "Cấu hình vùng an toàn động và ngưỡng vận hành. Phát hiện và phản hồi ngay lập tức với vi phạm tốc độ, lệch hướng và xâm nhập khu vực trái phép.",
+        "maritime_feature4_title": "Báo cáo pháp lý & Tuân thủ",
+        "maritime_feature4_body": "Tự động tạo báo cáo theo quy định hàng hải quốc tế, hỗ trợ tuân thủ, kiểm toán và điều tra sự cố theo chuẩn IMO và IALA.",
+
+        "benefits_label": "LỢI ÍCH",
+        "benefits_title": "Vì sao chọn VTS Apatek",
+        "benefit1_title": "Độ tin cậy cao",
+        "benefit1_body": "Theo dõi và cảnh báo cấp độ cao cho mọi loại tàu thuyền, từ tàu nhỏ đến tàu cỡ lớn và phà cao tốc, hoạt động ổn định trong mọi điều kiện.",
+        "benefit2_title": "Khả năng mở rộng",
+        "benefit2_body": "Phù hợp với mọi quy mô cảng hay đường thủy hôm nay, với kiến trúc sẵn sàng tăng trưởng cùng nhu cầu vận hành trong tương lai.",
+        "benefit3_title": "An toàn mạng",
+        "benefit3_body": "Chuyên gia an ninh mạng tham gia vào từng bước phát triển và triển khai, đảm bảo hệ thống đáp ứng các tiêu chuẩn bảo mật cao nhất.",
+        "benefit4_title": "Giao diện thân thiện",
+        "benefit4_body": "Được phát triển cùng các VTSO để tạo ra giao diện trực quan, giúp người vận hành làm chủ hệ thống nhanh chóng ngay từ những ngày đầu.",
+        "closing_title": "Nhận thức tình huống vượt trội cho vùng nước an toàn hơn",
+        "closing_body": "Khi mọi chuyển động tàu thuyền, mọi sự kiện hàng hải và mọi yêu cầu tuân thủ được quản lý trên một nền tảng thống nhất, các cơ quan cảng vụ có được khả năng điều hành dựa trên dữ liệu thực tế. Điều này củng cố an toàn hàng hải, nâng cao hiệu quả vận hành và hỗ trợ ra quyết định kịp thời, chính xác.",
+        "testimonials": []
+      },
+      "ais-dredging": {
+        "tag": "HÀNG HẢI / NẠO VÉT",
+        "title": "Giải pháp giám sát nạo vét bằng AIS",
+        "subtitle": "Nền tảng giám sát hoạt động nạo vét giúp nâng cao nhận thức tình huống và hỗ trợ ra quyết định chính xác",
+        "intro1": "Hoạt động nạo vét đòi hỏi sự minh bạch, kiểm soát liên tục và khả năng xác minh độc lập. Khi khối lượng thi công lớn, nhiều phương tiện tham gia và khu vực giám sát trải rộng, việc theo dõi bằng các phương pháp truyền thống thường không đáp ứng được yêu cầu quản lý hiện đại.",
+        "intro2": "Hệ thống Giám sát Nạo vét bằng AIS được thiết kế để cung cấp nhận thức tình huống toàn diện về hoạt động của các tàu nạo vét, sà lan vận chuyển và phương tiện hỗ trợ. Thông qua việc tích hợp dữ liệu AIS thời gian thực, bản đồ số và các vùng giám sát chuyên biệt, hệ thống giúp cơ quan quản lý theo dõi chính xác mọi hoạt động trong khu vực dự án, phát hiện sớm các bất thường và hỗ trợ đưa ra quyết định nhanh chóng, chính xác.",
+        "intro3": "Được xây dựng như một nền tảng mở, giải pháp có khả năng mở rộng linh hoạt theo quy mô dự án, yêu cầu quản lý và các quy định chuyên ngành đang thay đổi. Kết quả là một môi trường giám sát tập trung, minh bạch và hiệu quả, giúp nâng cao năng lực quản lý, giảm thiểu rủi ro và đảm bảo tuân thủ trong toàn bộ quá trình nạo vét.",
+        "tagline1": "Được thiết kế để xử lý sự phức tạp.",
+        "tagline2": "Được triển khai với sự đơn giản.",
+        "section1": "Giải pháp cung cấp khả năng giám sát thời gian thực đối với mọi hoạt động nạo vét, biến dữ liệu hành trình thành thông tin có giá trị cho công tác quản lý. Các cảnh báo thông minh và giao diện trực quan giúp người vận hành nhanh chóng phát hiện các sự kiện bất thường, đánh giá tác động và thực hiện các hành động cần thiết.",
+        "section2": "Nhờ cách tiếp cận tập trung vào người sử dụng, hệ thống giúp rút ngắn thời gian làm quen, tăng hiệu quả khai thác và duy trì mức độ kiểm soát cao đối với toàn bộ hoạt động thi công trên hiện trường.",
+        "features_label": "GIÁM SÁT NẠO VÉT BẰNG AIS",
+        "features_title": "Bạn nhận được",
+        "feature1_title": "Giám sát hoạt động thời gian thực",
+        "feature1_body": "Theo dõi liên tục vị trí, hướng di chuyển, tốc độ và trạng thái hoạt động của các tàu nạo vét và phương tiện liên quan trên một giao diện thống nhất.",
+        "feature2_title": "Kiểm soát khu vực nạo vét và đổ thải",
+        "feature2_body": "Thiết lập các vùng địa lý quản lý (Geofence) để giám sát phạm vi thi công được cấp phép, khu vực đổ vật liệu và các vùng hạn chế. Hệ thống tự động phát hiện các hoạt động ngoài phạm vi cho phép.",
+        "feature3_title": "Quản lý chu trình vận chuyển vật liệu",
+        "feature3_body": "Theo dõi toàn bộ chu trình từ khu vực nạo vét đến khu vực đổ thải hoặc tập kết vật liệu, hỗ trợ đánh giá sản lượng và hiệu suất khai thác.",
+        "feature4_title": "Cảnh báo và tuân thủ",
+        "feature4_body": "Tự động phát hiện các trường hợp dừng đỗ bất thường, thay đổi hành trình không phù hợp, hoạt động ngoài thời gian quy định hoặc xâm nhập khu vực hạn chế.",
+        "feature5_title": "Báo cáo và truy xuất lịch sử",
+        "feature5_body": "Lưu trữ đầy đủ dữ liệu hành trình, sự kiện và hoạt động của phương tiện, phục vụ thanh tra, kiểm tra, nghiệm thu và đối soát khối lượng thi công.",
+        "benefits_label": "LỢI ÍCH",
+        "benefits_title": "Những lợi ích mang lại",
+        "benefit1_title": "Tin cậy",
+        "benefit1_body": "Khả năng giám sát liên tục và chính xác dựa trên dữ liệu AIS thời gian thực, giúp giảm phụ thuộc vào báo cáo thủ công và tăng tính minh bạch của dự án.",
+        "benefit2_title": "Linh hoạt mở rộng",
+        "benefit2_body": "Dễ dàng mở rộng phạm vi giám sát, bổ sung khu vực dự án, phương tiện hoặc các nguồn dữ liệu mới theo nhu cầu quản lý thực tế.",
+        "benefit3_title": "An toàn và bảo mật",
+        "benefit3_body": "Dữ liệu được quản lý tập trung với cơ chế phân quyền và bảo mật phù hợp cho các cơ quan quản lý nhà nước, chủ đầu tư và đơn vị tư vấn giám sát.",
+        "benefit4_title": "Dễ sử dụng",
+        "benefit4_body": "Giao diện trực quan, tập trung vào nghiệp vụ giám sát hiện trường, cho phép người dùng nhanh chóng tiếp cận và khai thác hiệu quả hệ thống.",
+        "testimonials_label": "KHÁCH HÀNG",
+        "testimonials_title": "Nhận xét từ các Cảng vụ Hàng hải",
+        "testimonials": [
+          {
+            "client": "Cảng vụ Hàng hải Đồng Nai",
+            "quote": "Apatek đã thể hiện năng lực vượt trội trong việc tích hợp các hệ thống giám sát hàng hải trên một nền tảng thống nhất, giúp nâng cao hiệu quả quản lý và khả năng khai thác dữ liệu phục vụ điều hành."
+          },
+          {
+            "client": "Cảng vụ Hàng hải Cửa Lò",
+            "quote": "Chúng tôi đánh giá cao tính chuyên nghiệp của Apatek trong quá trình triển khai dự án, từ khảo sát, thiết kế đến vận hành và hỗ trợ kỹ thuật sau bàn giao."
+          },
+          {
+            "client": "Cảng vụ Hàng hải Quảng Ngãi",
+            "quote": "Giải pháp do Apatek triển khai đáp ứng tốt yêu cầu nghiệp vụ, đảm bảo tính ổn định, độ tin cậy và hiệu quả trong công tác giám sát hàng hải."
+          },
+          {
+            "client": "Cảng vụ Hàng hải Cần Thơ",
+            "quote": "Apatek đã chứng minh năng lực tích hợp và triển khai các hệ thống công nghệ hàng hải phức tạp, góp phần nâng cao năng lực giám sát và điều hành giao thông thủy trong khu vực."
+          },
+          {
+            "client": "Cảng vụ Hàng hải An Giang",
+            "quote": "Đội ngũ Apatek luôn chủ động, trách nhiệm và đồng hành cùng đơn vị trong suốt quá trình vận hành hệ thống, đảm bảo hoạt động liên tục và hiệu quả."
+          },
+          {
+            "client": "Cảng vụ Hàng hải Hải Phòng",
+            "quote": "Apatek đáp ứng tốt các yêu cầu kỹ thuật đối với các hệ thống có quy mô lớn, đồng thời thể hiện năng lực triển khai và quản lý dự án một cách bài bản, chuyên nghiệp."
+          },
+          {
+            "client": "Cảng vụ Hàng hải Thành phố Hồ Chí Minh",
+            "quote": "Với kinh nghiệm và năng lực chuyên môn vững vàng, Apatek đã triển khai thành công các giải pháp giám sát hàng hải, mang lại hiệu quả thiết thực cho công tác quản lý và điều hành."
+          }
+        ],
+        "closing_title": "Một nguồn dữ liệu thống nhất cho mọi bên liên quan",
+        "closing_body": "Việc sở hữu một nguồn dữ liệu tập trung và đáng tin cậy giúp các cơ quan quản lý, chủ đầu tư và đơn vị thi công cùng làm việc trên một bức tranh vận hành thống nhất. Mọi thông tin đều được cập nhật theo thời gian thực, giúp nâng cao hiệu quả phối hợp, tăng tính minh bạch và hỗ trợ ra quyết định dựa trên dữ liệu.",
+        "closing_extra": ""
+      },
+      "dms": {
+        "tag": "DMS / FMCG",
+        "title": "Distribution Management System (DMS)",
+        "subtitle": "Nền tảng quản lý kênh phân phối toàn diện cho doanh nghiệp hiện đại",
+        "intro1": "Trong bối cảnh thị trường ngày càng cạnh tranh, doanh nghiệp cần khả năng kiểm soát chặt chẽ hoạt động phân phối từ nhà sản xuất đến nhà phân phối, đại lý, điểm bán và người tiêu dùng cuối cùng. Tuy nhiên, việc quản lý dữ liệu phân tán, thiếu tính kết nối và cập nhật chậm thường dẫn đến tình trạng mất kiểm soát tồn kho, thiếu minh bạch doanh số và khó khăn trong việc đánh giá hiệu quả thị trường.",
+        "intro2": "Distribution Management System (DMS) là nền tảng quản lý kênh phân phối được thiết kế nhằm số hóa toàn bộ quy trình bán hàng và phân phối, giúp doanh nghiệp xây dựng một hệ sinh thái vận hành thống nhất, minh bạch và hiệu quả. Hệ thống cung cấp khả năng giám sát hoạt động kinh doanh theo thời gian thực, kết nối nhà sản xuất, nhà phân phối, đội ngũ bán hàng và điểm bán trên cùng một nền tảng dữ liệu tập trung.",
+        "intro3": "Thông qua việc tự động hóa quy trình, chuẩn hóa dữ liệu và cung cấp các công cụ phân tích thông minh, DMS giúp doanh nghiệp nâng cao năng lực quản trị, tối ưu hiệu suất vận hành và thúc đẩy tăng trưởng bền vững trên toàn bộ mạng lưới phân phối.",
+        "tagline1": "Được xây dựng để quản lý mạng lưới phân phối phức tạp.",
+        "tagline2": "Được triển khai để thúc đẩy tăng trưởng kinh doanh.",
+        "section1": "DMS giúp doanh nghiệp chuyển đổi từ phương thức quản lý truyền thống sang mô hình điều hành dựa trên dữ liệu thời gian thực. Mọi hoạt động từ đặt hàng, quản lý tồn kho, giám sát thị trường, quản lý lực lượng bán hàng đến triển khai chương trình khuyến mại đều được số hóa và kết nối trên một nền tảng thống nhất.",
+        "section2": "Nhờ đó, doanh nghiệp có thể nhanh chóng nắm bắt tình hình kinh doanh, tối ưu nguồn lực và đưa ra các quyết định chính xác hơn ở mọi cấp độ quản lý.",
+        "features_label": "QUẢN LÝ KÊNH PHÂN PHỐI THÔNG MINH",
+        "features_title": "Bạn nhận được",
+        "feature1_title": "Quản lý nhà phân phối và điểm bán",
+        "feature1_body": "Quản lý tập trung hệ thống nhà phân phối, đại lý, cửa hàng và điểm bán trên toàn quốc. Theo dõi hiệu quả hoạt động, doanh số và mức độ bao phủ thị trường của từng đơn vị trong mạng lưới phân phối.",
+        "feature2_title": "Quản lý đơn hàng xuyên suốt",
+        "feature2_body": "Số hóa toàn bộ quy trình từ tạo đơn hàng, phê duyệt, giao hàng, đối soát đến hoàn tất giao dịch. Giảm thiểu sai sót thủ công và rút ngắn thời gian xử lý đơn hàng.",
+        "feature3_title": "Kiểm soát tồn kho theo thời gian thực",
+        "feature3_body": "Theo dõi tồn kho tại nhà máy, kho trung tâm, nhà phân phối và điểm bán. Hỗ trợ dự báo nhu cầu và tối ưu luân chuyển hàng hóa nhằm giảm chi phí tồn kho và tránh thiếu hụt sản phẩm.",
+        "feature4_title": "Quản lý lực lượng bán hàng (Sales Force Automation)",
+        "feature4_body": "Hỗ trợ đội ngũ kinh doanh quản lý tuyến bán hàng, lịch trình viếng thăm khách hàng, ghi nhận đơn hàng, kiểm tra trưng bày và cập nhật dữ liệu thị trường ngay trên thiết bị di động.",
+        "feature5_title": "Quản lý chương trình khuyến mại và chính sách bán hàng",
+        "feature5_body": "Thiết lập, triển khai và giám sát các chương trình khuyến mại, chính sách giá, chiết khấu và hỗ trợ thương mại trên toàn hệ thống phân phối.",
+        "feature6_title": "Phân tích dữ liệu và báo cáo điều hành",
+        "feature6_body": "Cung cấp hệ thống báo cáo đa chiều về doanh số, tồn kho, độ phủ thị trường, hiệu suất bán hàng và hiệu quả nhà phân phối, hỗ trợ lãnh đạo đưa ra quyết định nhanh chóng và chính xác.",
+        "benefits_label": "LỢI ÍCH",
+        "benefits_title": "Những lợi ích mang lại",
+        "benefit1_title": "Tăng khả năng kiểm soát thị trường",
+        "benefit1_body": "Doanh nghiệp có thể theo dõi tình hình bán hàng và phân phối theo thời gian thực, từ đó nâng cao năng lực quản lý và phản ứng nhanh với biến động thị trường.",
+        "benefit2_title": "Nâng cao hiệu quả hoạt động bán hàng",
+        "benefit2_body": "Giúp đội ngũ kinh doanh làm việc hiệu quả hơn thông qua việc tự động hóa quy trình, giảm thời gian xử lý thủ công và tăng thời gian tiếp cận khách hàng.",
+        "benefit3_title": "Tối ưu tồn kho và chuỗi cung ứng",
+        "benefit3_body": "Cải thiện khả năng dự báo nhu cầu, tối ưu luân chuyển hàng hóa và giảm chi phí vận hành trên toàn bộ chuỗi phân phối.",
+        "benefit4_title": "Minh bạch dữ liệu kinh doanh",
+        "benefit4_body": "Xây dựng nguồn dữ liệu tập trung, nhất quán và đáng tin cậy cho mọi cấp quản lý, từ nhân viên bán hàng đến ban lãnh đạo doanh nghiệp.",
+        "benefit5_title": "Thúc đẩy tăng trưởng doanh thu",
+        "benefit5_body": "Tăng độ phủ thị trường, nâng cao chất lượng phục vụ khách hàng và cải thiện hiệu quả thực thi các chiến lược bán hàng.",
+        "benefit6_title": "Sẵn sàng cho chuyển đổi số",
+        "benefit6_body": "Dễ dàng tích hợp với ERP, CRM, BI, kế toán, kho vận và các hệ thống doanh nghiệp khác để hình thành nền tảng quản trị số toàn diện.",
+        "testimonials_label": "KHÁCH HÀNG",
+        "testimonials_title": "Nhận xét từ khách hàng",
+        "testimonials": [
+          {
+            "client": "Menvodka",
+            "author": "Ông Phạm Kinh Kha — Chủ tịch Menvodka",
+            "quote": "Apatek đào sâu để hiểu những vấn đề và thử thách của doanh nghiệp chúng tôi, rồi phát triển giải pháp để đưa chúng tôi đến thành công. Nhờ giải pháp của Apatek, chúng tôi đã giải quyết được những vấn đề ngày càng phức tạp để hoạt động hiệu quả hơn. Linh hoạt, sáng tạo, và tận tâm là những phẩm chất của đội ngũ Apatek."
+          },
+          {
+            "client": "Habeco",
+            "author": "Ông Nguyễn Đặng Toàn — Giám đốc Công ty TNHH MTV Thương Mại Habeco",
+            "quote": "Lựa chọn Apatek là đối tác vận hành hỗ trợ hệ thống DMS, PG là quyết định đúng đắn của Habeco. Với quan điểm hợp tác lâu dài Apatek đã giúp Habeco cải tiến vận hành, triển khai giải pháp mở rộng và khai thác hệ thống DMS, PG hiệu quả."
+          },
+          {
+            "client": "VICOSTONE",
+            "quote": "Apatek là đối tác công nghệ tin cậy, luôn đồng hành cùng chúng tôi trong việc tối ưu vận hành và nâng cao hiệu quả khai thác hệ thống."
+          },
+          {
+            "client": "PHENIKAA",
+            "quote": "Chúng tôi đánh giá cao năng lực triển khai, tính chuyên nghiệp và khả năng đáp ứng nhanh của đội ngũ Apatek."
+          },
+          {
+            "client": "Sữa Mộc Châu",
+            "quote": "Giải pháp do Apatek triển khai đã góp phần nâng cao hiệu quả quản lý kênh phân phối và vận hành kinh doanh."
+          },
+          {
+            "client": "Sữa Ba Vì",
+            "quote": "Apatek luôn chủ động hỗ trợ, cải tiến hệ thống và đồng hành cùng doanh nghiệp trong quá trình phát triển."
+          }
+        ],
+        "closing_title": "Một nguồn dữ liệu duy nhất cho toàn bộ hệ sinh thái phân phối",
+        "closing_body": "Khi mọi hoạt động bán hàng, phân phối và thị trường được quản lý trên một nền tảng thống nhất, doanh nghiệp sẽ có được khả năng điều hành dựa trên dữ liệu thực tế thay vì các báo cáo rời rạc. Điều này giúp tăng cường khả năng phối hợp giữa các phòng ban, nâng cao hiệu quả ra quyết định và tạo nền tảng cho tăng trưởng dài hạn.",
+        "closing_extra": "Distribution Management System không chỉ là giải pháp quản lý phân phối mà còn là nền tảng chuyển đổi số giúp doanh nghiệp xây dựng mạng lưới bán hàng hiện đại, minh bạch và có khả năng mở rộng trong tương lai."
+      }
+    }
   }
 }

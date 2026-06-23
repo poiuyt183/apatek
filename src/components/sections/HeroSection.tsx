@@ -6,12 +6,13 @@ import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { HERO_VIDEO_POSTER, HERO_VIDEO_URL } from "@/lib/hero-media";
+import { getSolutionsHref } from "@/data/solutions";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
   const pathname = usePathname();
   const locale = pathname.startsWith("/vi") ? "vi" : "en";
-  const servicesHref = `/${locale}${locale === "vi" ? "/san-pham-dich-vu" : "/products-services"}`;
+  const solutionsHref = getSolutionsHref(locale);
   const contactHref = `/${locale}${locale === "vi" ? "/lien-he" : "/contact"}`;
 
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -61,7 +62,7 @@ export default function HeroSection() {
           <p className="hero-subtitle">{t("subtitle")}</p>
 
           <div className="hero-actions">
-            <Link href={servicesHref} className="btn-primary" id="hero-cta-primary">
+            <Link href={solutionsHref} className="btn-primary" id="hero-cta-primary">
               {t("cta_primary")}
               <ArrowRight size={15} strokeWidth={2} />
             </Link>

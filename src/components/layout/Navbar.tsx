@@ -7,16 +7,16 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import {
-  SERVICES,
-  getProductsBasePath,
-  getServiceHref,
-} from "@/data/services";
+  SOLUTION_CATALOG,
+  getCatalogHref,
+  getSolutionsHref,
+} from "@/data/solutions";
+import { getCatalogLabels } from "@/lib/solution-labels";
 
 const NAV_LINKS = [
   { key: "home", href: "/" },
   { key: "about", href: "/about" },
-  { key: "vision", href: "/vision" },
-  { key: "products", href: "/products-services", hasDropdown: true },
+  { key: "solutions", href: "/solutions", hasDropdown: true },
   { key: "partners", href: "/partners" },
   { key: "clients", href: "/clients" },
   { key: "news", href: "/news" },
@@ -27,8 +27,7 @@ const NAV_LINKS = [
 const VI_NAV_LINKS = [
   { key: "home", href: "/" },
   { key: "about", href: "/gioi-thieu" },
-  { key: "vision", href: "/tam-nhin" },
-  { key: "products", href: "/san-pham-dich-vu", hasDropdown: true },
+  { key: "solutions", href: "/giai-phap", hasDropdown: true },
   { key: "partners", href: "/doi-tac" },
   { key: "clients", href: "/khach-hang" },
   { key: "news", href: "/tin-tuc" },
@@ -40,6 +39,7 @@ const DROPDOWN_CLOSE_DELAY = 180;
 
 export default function Navbar() {
   const t = useTranslations("nav");
+  const ts = useTranslations("solutions");
   const tp = useTranslations("products");
   const tc = useTranslations("common");
   const pathname = usePathname();
@@ -52,7 +52,7 @@ export default function Navbar() {
 
   const locale = pathname.startsWith("/vi") ? "vi" : "en";
   const navLinks = locale === "vi" ? VI_NAV_LINKS : NAV_LINKS;
-  const productsHref = `/${locale}${getProductsBasePath(locale)}`;
+  const solutionsHref = getSolutionsHref(locale);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -99,7 +99,7 @@ export default function Navbar() {
     }, DROPDOWN_CLOSE_DELAY);
   };
 
-  const renderServicesDropdown = (linkHref: string) => (
+  const renderSolutionsDropdown = (linkHref: string) => (
     <div
       className={`navbar-dropdown-wrap${servicesOpen ? " is-open" : ""}`}
       onMouseEnter={openServices}
@@ -111,37 +111,40 @@ export default function Navbar() {
         aria-expanded={servicesOpen}
         aria-haspopup="true"
       >
-        {t("products")}
+        {t("solutions")}
         <ChevronDown size={14} strokeWidth={2} className="navbar-dropdown-chevron" />
       </Link>
 
       <div className="navbar-dropdown" role="menu">
-        <div className="navbar-dropdown-header">{tp("section_label")}</div>
+        <div className="navbar-dropdown-header">{ts("section_label")}</div>
         <div className="navbar-dropdown-grid">
-          {SERVICES.map((service) => (
+          {SOLUTION_CATALOG.map((solution) => {
+            const labels = getCatalogLabels(solution, ts, tp);
+            return (
             <Link
-              key={service.anchorId}
-              href={getServiceHref(locale, service.anchorId)}
-              className={`navbar-dropdown-item${service.featured ? " featured" : ""}`}
+              key={solution.id}
+              href={getCatalogHref(locale, solution)}
+              className={`navbar-dropdown-item${solution.featured ? " featured" : ""}`}
               role="menuitem"
               onClick={() => setServicesOpen(false)}
             >
               <div className="navbar-dropdown-icon">
-                <service.Icon size={18} color="var(--color-primary)" strokeWidth={1.5} />
+                <solution.Icon size={18} color="var(--color-primary)" strokeWidth={1.5} />
               </div>
               <div>
-                <div className="navbar-dropdown-item-title">{tp(service.titleKey)}</div>
-                <div className="navbar-dropdown-item-tag">{tp(service.tagKey)}</div>
+                <div className="navbar-dropdown-item-title">{labels.title}</div>
+                <div className="navbar-dropdown-item-tag">{labels.tag}</div>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
         <div className="navbar-dropdown-footer">
           <span style={{ fontSize: 12, color: "var(--color-text-muted)" }}>
-            {SERVICES.length} {locale === "vi" ? "dịch vụ" : "services"}
+            {SOLUTION_CATALOG.length} {locale === "vi" ? "giải pháp" : "solutions"}
           </span>
           <Link
-            href={productsHref}
+            href={solutionsHref}
             className="navbar-dropdown-footer-link"
             onClick={() => setServicesOpen(false)}
           >
@@ -204,7 +207,7 @@ export default function Navbar() {
               {navLinks.map((link) => (
                 <li key={link.key}>
                   {"hasDropdown" in link && link.hasDropdown
-                    ? renderServicesDropdown(link.href)
+                    ? renderSolutionsDropdown(link.href)
                     : (
                       <Link
                         href={getHref(link.href)}
@@ -273,23 +276,26 @@ export default function Navbar() {
                 <div className={`mobile-services-submenu${mobileServicesOpen ? " is-open" : ""}`}>
                   <div className="mobile-services-submenu-inner">
                     <div className="mobile-services-list">
-                      {SERVICES.map((service) => (
+                      {SOLUTION_CATALOG.map((solution) => {
+                        const labels = getCatalogLabels(solution, ts, tp);
+                        return (
                         <Link
-                          key={service.anchorId}
-                          href={getServiceHref(locale, service.anchorId)}
+                          key={solution.id}
+                          href={getCatalogHref(locale, solution)}
                           className="mobile-services-link"
                           onClick={() => {
                             setMobileOpen(false);
                             setMobileServicesOpen(false);
                           }}
                         >
-                          <service.Icon size={16} color="var(--color-primary)" strokeWidth={1.5} />
-                          <span style={{ flex: 1 }}>{tp(service.titleKey)}</span>
-                          <span className="mobile-services-link-tag">{tp(service.tagKey)}</span>
+                          <solution.Icon size={16} color="var(--color-primary)" strokeWidth={1.5} />
+                          <span style={{ flex: 1 }}>{labels.title}</span>
+                          <span className="mobile-services-link-tag">{labels.tag}</span>
                         </Link>
-                      ))}
+                        );
+                      })}
                       <Link
-                        href={productsHref}
+                        href={solutionsHref}
                         className="mobile-services-link"
                         style={{ fontWeight: 700, color: "var(--color-primary)" }}
                         onClick={() => {
