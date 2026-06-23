@@ -8,13 +8,15 @@ import "../globals.css";
 import Footer from "@/components/layout/Footer";
 import { bodyFont, displayFont } from "@/lib/fonts";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://apatek.com.vn";
+function getSiteUrl() {
+  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://apatek.com.vn";
+}
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(getSiteUrl()),
   title: {
     template: "%s | Apatek Vietnam",
-    default: "Kiến tạo tương lai hàng hải — Apatek Vietnam",
+    default: "Apatek Vietnam — Kiến tạo tương lai hàng hải",
   },
   description:
     "Apatek Vietnam — công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số. Triển khai VTS, DMS, AIS cho cảng vụ và doanh nghiệp Việt Nam.",
@@ -34,27 +36,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       template: "%s | Apatek Vietnam",
-      default: "Kiến tạo tương lai hàng hải — Apatek Vietnam",
+      default: "Apatek Vietnam — Kiến tạo tương lai hàng hải",
     },
     description:
       "Apatek Vietnam — công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số. Triển khai VTS, DMS, AIS cho cảng vụ và doanh nghiệp Việt Nam.",
     siteName: "Apatek Vietnam",
     locale: "vi_VN",
     type: "website",
-    images: [
-      {
-        url: "/logo_apatek.png",
-        width: 800,
-        height: 400,
-        alt: "Apatek Vietnam",
-      },
-    ],
+    // images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: {
       template: "%s | Apatek Vietnam",
-      default: "Kiến tạo tương lai hàng hải — Apatek Vietnam",
+      default: "Apatek Vietnam — Kiến tạo tương lai hàng hải",
     },
     description:
       "Apatek Vietnam — công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số.",

@@ -8,12 +8,18 @@ import ContactCTA from "@/components/sections/ContactCTA";
 import { HERO_VIDEO_POSTER, HERO_VIDEO_URL } from "@/lib/hero-media";
 
 export const metadata: Metadata = {
-  title: "Kiến tạo tương lai hàng hải",
+  title: {
+    absolute: "Apatek — Kiến tạo tương lai hàng hải",
+  },
   description:
     "Apatek Vietnam — công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số. Triển khai VTS, DMS, AIS cho cảng vụ, cơ quan hàng hải và doanh nghiệp Việt Nam.",
   openGraph: {
+    title: "Apatek — Kiến tạo tương lai hàng hải",
     description:
       "Công ty công nghệ chuyên sâu về hàng hải và chuyển đổi số. Triển khai VTS, DMS, AIS cho cảng vụ và doanh nghiệp Việt Nam.",
+  },
+  twitter: {
+    title: "Apatek — Kiến tạo tương lai hàng hải",
   },
 };
 
