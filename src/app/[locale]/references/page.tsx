@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import ContactCTA from "@/components/sections/ContactCTA";
-import { getSolutionHref } from "@/data/solutions";
+import ReferencesTabs from "@/components/references/ReferencesTabs";
+import { REFERENCE_SOLUTIONS } from "@/data/references";
 
 export const metadata: Metadata = {
-  title: "Nhận xét khách hàng",
+  title: "References",
   description:
-    "Phản hồi thực tế từ các cảng vụ, cơ quan hàng hải và doanh nghiệp đã triển khai thành công giải pháp Apatek Vietnam.",
+    "Trusted by port authorities and maritime agencies. Client references and case studies from Apatek Vietnam deployments.",
   openGraph: {
+    title: "References",
     description:
-      "Phản hồi thực tế từ các cảng vụ và doanh nghiệp đã triển khai thành công giải pháp Apatek Vietnam.",
+      "Trusted by port authorities and maritime agencies worldwide.",
   },
 };
 
@@ -23,58 +23,39 @@ export default async function ReferencesPage({
   const { locale } = await params;
   const t = await getTranslations("solutions");
   const tr = await getTranslations("references");
-  const tc = await getTranslations("common");
 
-  const aisRaw = t.raw("items.ais-dredging.testimonials") as {
+  const testimonials = t.raw("items.ais-dredging.testimonials") as {
     client: string;
     author?: string;
     quote: string;
   }[];
 
-  const aisLabel = t("items.ais-dredging.tag");
-  const aisHref = getSolutionHref(locale, "ais-dredging");
-  const solutionsHref = `/${locale}${locale === "vi" ? "/giai-phap" : "/solutions"}`;
+  const solutions = REFERENCE_SOLUTIONS.map((item, index) => ({
+    id: item.id,
+    name: testimonials[index]?.client ?? item.id,
+    description: locale === "vi" ? item.description.vi : item.description.en,
+    image: item.image,
+  }));
 
   return (
     <div className="references-page">
-      {/* ── Hero ── */}
-      <section className="references-hero">
-        <div className="container">
-          <Link href={solutionsHref} className="sol-back">
-            <ArrowLeft size={16} strokeWidth={2} />
-            {tc("back")}
-          </Link>
-          <span className="section-label">{tr("section_label")}</span>
-          <h1 className="references-title">{tr("title")}</h1>
-          <p className="references-description">{tr("description")}</p>
+      <section className="ref-hero">
+        <div className="container ref-hero-inner">
+          <span className="ref-hero-label">{tr("hero_label")}</span>
+          <h1 className="ref-hero-title">{tr("title")}</h1>
+          <p className="ref-hero-desc">{tr("description")}</p>
         </div>
       </section>
 
-      {/* ── AIS Testimonials ── */}
-      <section className="section references-group">
-        <div className="container">
-          <div className="references-group-head">
-            <span className="section-label">{aisLabel}</span>
-            <Link href={aisHref} className="references-solution-link">
-              {t("items.ais-dredging.title")} →
-            </Link>
-          </div>
-          <div className="sol-testimonials-track">
-            {aisRaw.map((item, idx) => (
-              <blockquote key={item.client} className="sol-testimonial-card">
-                <span className="sol-testimonial-num" aria-hidden="true">
-                  {String(idx + 1).padStart(2, "0")}
-                </span>
-                <p className="sol-testimonial-quote">{item.quote}</p>
-                <footer className="sol-testimonial-client">
-                  <span className="sol-testimonial-dot" aria-hidden="true" />
-                  {item.author ?? item.client}
-                </footer>
-              </blockquote>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ReferencesTabs
+        solutions={solutions}
+        testimonials={testimonials.map((item, index) => ({
+          ...item,
+          image: REFERENCE_SOLUTIONS[index]?.customerImage ?? "/references/dongnai-port.png",
+        }))}
+        tabSolutions={tr("tab_solutions")}
+        tabCustomers={tr("tab_customers")}
+      />
 
       <ContactCTA />
     </div>

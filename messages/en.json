@@ -373,15 +373,14 @@
     "view_all_references": "View all references"
   },
   "references": {
-    "title": "Client References",
-    "section_label": "CLIENTS",
-    "description": "Real feedback from organisations that have deployed Apatek solutions.",
-    "all_label": "ALL REFERENCES",
-    "ais_label": "AIS SOLUTION",
-    "dms_label": "DMS SOLUTION",
+    "title": "References",
+    "hero_label": "Rely on what our customers say",
+    "description": "Trusted by ports and maritime authorities worldwide.",
+    "tab_solutions": "Solutions",
+    "tab_customers": "What customers say",
     "cta_label": "CLIENTS",
     "cta_title": "Trusted by leading organisations",
-    "cta_body": "Over 13 organisations and businesses have successfully deployed Apatek solutions and shared their real-world results.",
+    "cta_body": "Port authorities and businesses have successfully deployed Apatek solutions and shared their real-world results.",
     "cta_button": "View all references"
   },
   "solutions": {

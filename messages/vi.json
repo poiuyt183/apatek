@@ -373,15 +373,14 @@
     "view_all_references": "Xem tất cả nhận xét"
   },
   "references": {
-    "title": "Nhận xét khách hàng",
-    "section_label": "KHÁCH HÀNG",
-    "description": "Những phản hồi thực tế từ các khách hàng đã triển khai giải pháp của Apatek.",
-    "all_label": "TẤT CẢ NHẬN XÉT",
-    "ais_label": "GIẢI PHÁP AIS",
-    "dms_label": "GIẢI PHÁP DMS",
+    "title": "References",
+    "hero_label": "Tin vào những gì khách hàng nói",
+    "description": "Được tin tưởng bởi các cảng vụ và cơ quan hàng hải trên toàn quốc.",
+    "tab_solutions": "Giải pháp",
+    "tab_customers": "Khách hàng nói gì",
     "cta_label": "KHÁCH HÀNG",
     "cta_title": "Doanh nghiệp tin tưởng chúng tôi",
-    "cta_body": "Hơn 13 tổ chức, doanh nghiệp đã triển khai thành công giải pháp Apatek và chia sẻ kết quả thực tế.",
+    "cta_body": "Các cảng vụ hàng hải và doanh nghiệp đã triển khai thành công giải pháp Apatek và chia sẻ kết quả thực tế.",
     "cta_button": "Xem tất cả nhận xét"
   },
   "solutions": {
